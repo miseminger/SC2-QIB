@@ -1,0 +1,190 @@
+Apr-27 01:31:19.409 [main] DEBUG nextflow.cli.Launcher - $> nextflow run sequencing_centre_trees_pango.nf --start_date 2021-11-01 --end_date 2021-11-05 --diverseQueries false --centre NORW --max_samples_per_month false -with-report metrics.txt
+Apr-27 01:31:20.124 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Apr-27 01:31:20.292 [main] INFO  nextflow.cli.CmdRun - Launching `sequencing_centre_trees_pango.nf` [elated_venter] - revision: e16724dde0
+Apr-27 01:31:21.022 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/ubuntu/.nextflow/plugins
+Apr-27 01:31:21.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-27 01:31:21.119 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-27 01:31:21.130 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-27 01:31:21.148 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-27 01:31:21.242 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-27 01:31:21.643 [main] DEBUG nextflow.Session - Session uuid: be65f704-690a-4e15-8851-a3f6e4bf568e
+Apr-27 01:31:21.643 [main] DEBUG nextflow.Session - Run name: elated_venter
+Apr-27 01:31:21.664 [main] DEBUG nextflow.Session - Executor pool size: 32
+Apr-27 01:31:21.828 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 4.15.0-76-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.14.1+1-Ubuntu-0ubuntu1.18.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 21642@madeline-01 [192.168.10.248]
+  CPUs: 32 - Mem: 230.6 GB (164.2 GB) - Swap: 0 (0)
+Apr-27 01:31:22.004 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/nf-test/sequencing_centre_trees/work [ext2/ext3]
+Apr-27 01:31:22.004 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/nf-test/sequencing_centre_trees/bin
+Apr-27 01:31:22.044 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-27 01:31:22.150 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-27 01:31:22.608 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Apr-27 01:31:25.066 [main] DEBUG nextflow.Session - Session start invoked
+Apr-27 01:31:35.785 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-27 01:31:36.982 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:36.982 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:37.055 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-27 01:31:37.140 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=32; memory=230.6 GB; capacity=32; pollInterval=100ms; dumpInterval=5m
+Apr-27 01:31:37.479 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Apr-27 01:31:39.058 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:39.081 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:39.327 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:39.327 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:39.359 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:39.363 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:39.571 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:39.581 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:40.687 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:40.687 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:40.817 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:40.817 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:41.011 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:41.019 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:41.180 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:41.190 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:41.340 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 01:31:41.340 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 01:31:41.405 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: getFastaRecords, reduceQueries, runPangolin, maskProblematicSites, getCOGUKMetadata, removeWuhanHu1, buildFastTree, refineTree, chooseSamples, joinMetadata
+Apr-27 01:31:41.417 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Apr-27 01:31:41.425 [main] DEBUG nextflow.Session - Session await
+Apr-27 01:31:42.220 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 01:31:42.381 [Task submitter] INFO  nextflow.Session - [41/cc5c58] Submitted process > chooseSamples (1)
+Apr-27 01:32:07.714 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: chooseSamples (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/41/cc5c58edeba79fb5083f1de6f9617a]
+Apr-27 01:32:07.793 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 01:32:07.888 [Task submitter] INFO  nextflow.Session - [56/dd5ea2] Submitted process > getFastaRecords (1)
+Apr-27 01:36:37.416 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 01:41:37.484 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 01:46:37.514 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 01:51:37.528 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 01:56:37.529 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:01:37.577 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:06:37.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:11:37.639 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:16:37.647 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:21:37.711 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:26:37.726 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:28:50.196 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getFastaRecords (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/56/dd5ea242aff95f81fa86b0a8c4ebe8]
+Apr-27 02:28:50.353 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 02:28:50.391 [Task submitter] INFO  nextflow.Session - [a5/6a7cdd] Submitted process > maskProblematicSites (1)
+Apr-27 02:28:51.647 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: maskProblematicSites (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/a5/6a7cddf1b5f1766d434e0595e26d87]
+Apr-27 02:28:51.743 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 02:28:51.744 [Task submitter] INFO  nextflow.Session - [9a/ae3322] Submitted process > removeWuhanHu1 (1)
+Apr-27 02:28:52.397 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: removeWuhanHu1 (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/9a/ae332212d65e0fde72c76d16cc14f3]
+Apr-27 02:28:52.495 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 02:28:52.522 [Task submitter] INFO  nextflow.Session - [f8/382786] Submitted process > runPangolin (1)
+Apr-27 02:28:52.674 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 02:28:52.743 [Task submitter] INFO  nextflow.Session - [94/9b9981] Submitted process > getCOGUKMetadata (1)
+Apr-27 02:28:54.135 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 02:28:54.160 [Task submitter] INFO  nextflow.Session - [23/bf6524] Submitted process > buildFastTree (1)
+Apr-27 02:29:14.239 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: buildFastTree (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/23/bf65246f8a1751efe3afe7f3bce9ee]
+Apr-27 02:29:14.451 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 02:29:14.454 [Task submitter] INFO  nextflow.Session - [72/e003f7] Submitted process > refineTree (1)
+Apr-27 02:30:07.179 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: getCOGUKMetadata (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/94/9b9981a1c8cc74e605e48dcb7abbb1]
+Apr-27 02:30:52.471 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: runPangolin (1); status: COMPLETED; exit: 1; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/f8/382786b0123fda0b145da20a458d16]
+Apr-27 02:30:52.664 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'runPangolin (1)'
+
+Caused by:
+  Process `runPangolin (1)` terminated with an error exit status (1)
+
+Command executed:
+
+  pangolin *aln --outfile lineage_report.csv
+
+Command exit status:
+  1
+
+Command output:
+  1150 hashed sequences written
+  Decrypted 321 sequences
+  Passing 1150 into processing pipeline.
+  Found the snakefile
+  The query file is aln
+  Number of threads is 1
+  Looking in /opt/miniconda3/lib/python3.7/site-packages/lineages/data for data files...
+  
+  Data files found
+  Sequence alignment:	/opt/miniconda3/lib/python3.7/site-packages/lineages/data/anonymised.encrypted.aln.safe.fasta
+  Guide tree:		/opt/miniconda3/lib/python3.7/site-packages/lineages/data/anonymised.aln.safe.fasta.treefile
+  Lineages csv:		/opt/miniconda3/lib/python3.7/site-packages/lineages/data/lineages.metadata.csv
+
+Command error:
+  If unsure which option to use, try 'mafft --auto input > output'.
+  For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+  
+  The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+  It tends to insert more gaps into gap-rich regions than previous versions.
+  To disable this change, add the --leavegappyregion option.
+  
+  Removing temporary output file /tmp/tmpei_47jvl/tax323791064tax.fasta.
+  [Wed Apr 27 02:30:48 2022]
+  Finished job 4516.
+  2 of 4604 steps (0.04%) done
+  
+  [Wed Apr 27 02:30:48 2022]
+  rule iqtree_with_guide_tree:
+      input: /tmp/tmpei_47jvl/tax323791064tax.aln.fasta, /opt/miniconda3/lib/python3.7/site-packages/lineages/data/anonymised.aln.safe.fasta.treefile
+      output: /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.treefile, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.parstree, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.splits.nex, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.contree, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.log, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.ckp.gz, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.iqtree
+      jobid: 3366
+      wildcards: query=tax323791064tax
+  
+  [33mJob counts:
+  	count	jobs
+  	1	iqtree_with_guide_tree
+  	1[0m
+  For AU test please specify number of bootstrap replicates via -zb option
+  [32m[Wed Apr 27 02:30:50 2022][0m
+  [31mError in rule iqtree_with_guide_tree:[0m
+  [31m    jobid: 0[0m
+  [31m    output: /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.treefile, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.parstree, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.splits.nex, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.contree, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.log, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.ckp.gz, /tmp/tmpei_47jvl/tax323791064tax.aln.fasta.iqtree[0m
+  [31m[0m
+  [31mRuleException:
+  CalledProcessError in line 76 of /opt/miniconda3/lib/python3.7/site-packages/pangolin/scripts/assign_query_lineage.smk:
+  Command 'set -euo pipefail;  iqtree -s /tmp/tmpei_47jvl/tax323791064tax.aln.fasta -bb 1000 -au -alrt 1000 -m HKY -g /opt/miniconda3/lib/python3.7/site-packages/lineages/data/anonymised.aln.safe.fasta.treefile -quiet -nt 1 -o 'outgroup_A'' returned non-zero exit status 2.
+    File "/opt/miniconda3/lib/python3.7/site-packages/pangolin/scripts/assign_query_lineage.smk", line 76, in __rule_iqtree_with_guide_tree
+    File "/opt/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+  [31mExiting because a job execution failed. Look above for error message[0m
+  Shutting down, this might take some time.
+  Exiting because a job execution failed. Look above for error message
+  Complete log: /tmp/tmpei_47jvl/.snakemake/log/2022-04-27T022923.687229.snakemake.log
+  [32m[Wed Apr 27 02:30:51 2022][0m
+  [31mError in rule assign_lineages:[0m
+  [31m    jobid: 0[0m
+  [31m    output: lineage_report.csv[0m
+  [31m[0m
+  [31mRuleException:
+  CalledProcessError in line 75 of /opt/miniconda3/lib/python3.7/site-packages/pangolin/scripts/assign_query_file.smk:
+  Command 'set -euo pipefail;  snakemake --nolock --snakefile /opt/miniconda3/lib/python3.7/site-packages/pangolin/scripts/assign_query_lineage.smk --directory /tmp/tmpei_47jvl --configfile /tmp/tmpei_47jvl/config.yaml --config outdir=/home/ubuntu/nf-test/sequencing_centre_trees/work/f8/382786b0123fda0b145da20a458d16 outfile=lineage_report.csv write_tree=False tempdir=/tmp/tmpei_47jvl query_fasta=/tmp/tmpei_47jvl/query.fasta qc_fail=/tmp/tmpei_47jvl/query.failed_qc.fasta representative_aln=/tmp/tmpei_47jvl/anonymised.aln.fasta lineages_version=2020-05-19 guide_tree=/opt/miniconda3/lib/python3.7/site-packages/lineages/data/anonymised.aln.safe.fasta.treefile key=/tmp/tmpei_47jvl/query_key.csv --cores 1' returned non-zero exit status 1.
+    File "/opt/miniconda3/lib/python3.7/site-packages/pangolin/scripts/assign_query_file.smk", line 75, in __rule_assign_lineages
+    File "/opt/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+  [31mExiting because a job execution failed. Look above for error message[0m
+  Exiting because a job execution failed. Look above for error message
+
+Work dir:
+  /home/ubuntu/nf-test/sequencing_centre_trees/work/f8/382786b0123fda0b145da20a458d16
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Apr-27 02:30:52.711 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `runPangolin (1)` terminated with an error exit status (1)
+Apr-27 02:30:52.852 [main] DEBUG nextflow.Session - Session await > all process finished
+Apr-27 02:30:52.852 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-27 02:30:52.940 [main] WARN  n.processor.TaskPollingMonitor - Killing pending tasks (1)
+Apr-27 02:30:53.199 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=1; retriesCount=0; abortedCount=0; succeedDuration=58m 43s; failedDuration=2m; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Apr-27 02:30:53.199 [main] DEBUG nextflow.trace.ReportObserver - Flow completing -- rendering html report
+Apr-27 02:30:53.800 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":{"mean":99.9,"min":99.9,"q1":99.9,"q2":99.9,"q3":99.9,"max":99.9,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"process":"chooseSamples","mem":{"mean":1104003072,"min":1104003072,"q1":1104003072,"q2":1104003072,"q3":1104003072,"max":1104003072,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":1458298880,"min":1458298880,"q1":1458298880,"q2":1458298880,"q3":1458298880,"max":1458298880,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"reads":{"mean":68189887,"min":68189887,"q1":68189887,"q2":68189887,"q3":68189887,"max":68189887,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"cpu":{"mean":99.9,"min":99.9,"q1":99.9,"q2":99.9,"q3":99.9,"max":99.9,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"time":{"mean":25170,"min":25170,"q1":25170,"q2":25170,"q3":25170,"max":25170,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"writes":{"mean":31784,"min":31784,"q1":31784,"q2":31784,"q3":31784,"max":31784,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"}},{"cpuUsage":{"mean":171.9,"min":171.9,"q1":171.9,"q2":171.9,"q3":171.9,"max":171.9,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"process":"getFastaRecords","mem":{"mean":27074560,"min":27074560,"q1":27074560,"q2":27074560,"q3":27074560,"max":27074560,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":78315520,"min":78315520,"q1":78315520,"q2":78315520,"q3":78315520,"max":78315520,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"reads":{"mean":273116632843,"min":273116632843,"q1":273116632843,"q2":273116632843,"q3":273116632843,"max":273116632843,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"cpu":{"mean":171.9,"min":171.9,"q1":171.9,"q2":171.9,"q3":171.9,"max":171.9,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"time":{"mean":3402182,"min":3402182,"q1":3402182,"q2":3402182,"q3":3402182,"max":3402182,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"writes":{"mean":272723155753,"min":272723155753,"q1":272723155753,"q2":272723155753,"q3":272723155753,"max":272723155753,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"}},{"cpuUsage":{"mean":96.3,"min":96.3,"q1":96.3,"q2":96.3,"q3":96.3,"max":96.3,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"process":"maskProblematicSites","mem":{"mean":11599872,"min":11599872,"q1":11599872,"q2":11599872,"q3":11599872,"max":11599872,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":37855232,"min":37855232,"q1":37855232,"q2":37855232,"q3":37855232,"max":37855232,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"reads":{"mean":35191685,"min":35191685,"q1":35191685,"q2":35191685,"q3":35191685,"max":35191685,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"cpu":{"mean":96.3,"min":96.3,"q1":96.3,"q2":96.3,"q3":96.3,"max":96.3,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"time":{"mean":1136,"min":1136,"q1":1136,"q2":1136,"q3":1136,"max":1136,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"writes":{"mean":34450866,"min":34450866,"q1":34450866,"q2":34450866,"q3":34450866,"max":34450866,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"}},{"cpuUsage":{"mean":86.9,"min":86.9,"q1":86.9,"q2":86.9,"q3":86.9,"max":86.9,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"process":"removeWuhanHu1","mem":{"mean":5943296,"min":5943296,"q1":5943296,"q2":5943296,"q3":5943296,"max":5943296,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":31158272,"min":31158272,"q1":31158272,"q2":31158272,"q3":31158272,"max":31158272,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"reads":{"mean":34579835,"min":34579835,"q1":34579835,"q2":34579835,"q3":34579835,"max":34579835,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"cpu":{"mean":86.9,"min":86.9,"q1":86.9,"q2":86.9,"q3":86.9,"max":86.9,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"time":{"mean":470,"min":470,"q1":470,"q2":470,"q3":470,"max":470,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"writes":{"mean":34420864,"min":34420864,"q1":34420864,"q2":34420864,"q3":34420864,"max":34420864,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"}},{"cpuUsage":{"mean":209.8,"min":209.8,"q1":209.8,"q2":209.8,"q3":209.8,"max":209.8,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"process":"buildFastTree","mem":{"mean":39665664,"min":39665664,"q1":39665664,"q2":39665664,"q3":39665664,"max":39665664,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":116985856,"min":116985856,"q1":116985856,"q2":116985856,"q3":116985856,"max":116985856,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"reads":{"mean":137831506,"min":137831506,"q1":137831506,"q2":137831506,"q3":137831506,"max":137831506,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"cpu":{"mean":209.8,"min":209.8,"q1":209.8,"q2":209.8,"q3":209.8,"max":209.8,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"time":{"mean":19994,"min":19994,"q1":19994,"q2":19994,"q3":19994,"max":19994,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"writes":{"mean":103329995,"min":103329995,"q1":103329995,"q2":103329995,"q3":103329995,"max":103329995,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"}},{"cpuUsage":{"mean":103.8,"min":103.8,"q1":103.8,"q2":103.8,"q3":103.8,"max":103.8,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"process":"getCOGUKMetadata","mem":{"mean":27299840,"min":27299840,"q1":27299840,"q2":27299840,"q3":27299840,"max":27299840,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":78155776,"min":78155776,"q1":78155776,"q2":78155776,"q3":78155776,"max":78155776,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"reads":{"mean":953685911,"min":953685911,"q1":953685911,"q2":953685911,"q3":953685911,"max":953685911,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"cpu":{"mean":103.8,"min":103.8,"q1":103.8,"q2":103.8,"q3":103.8,"max":103.8,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"time":{"mean":74306,"min":74306,"q1":74306,"q2":74306,"q3":74306,"max":74306,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"writes":{"mean":860016717,"min":860016717,"q1":860016717,"q2":860016717,"q3":860016717,"max":860016717,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"}},{"cpuUsage":null,"process":"runPangolin","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":119863,"min":119863,"q1":119863,"q2":119863,"q3":119863,"max":119863,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"writes":null},{"cpuUsage":null,"process":"refineTree","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":null,"writes":null}]
+Apr-27 02:30:58.547 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Apr-27 02:30:58.810 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rapidnj nn_samples_masked.aln -i fa -t d -n -c 8 -o t -x nn_samples_masked.aln.tre
+iqtree -k !{params.diverseNeighbours} nn_samples_masked.aln.tre
+grep -A !{params.diverseNeighbours} "The optimal PD set has" nn_samples_masked.aln.tre.pda | sed '1d' | sed 's/^.//;s/_/\//g' | perl -ple 'chop' | sort | uniq > reduced_nns.txt
+grep -w -A 1 -f reduced_nns.txt nn_samples_masked.aln --no-group-separator > reduced_nns.aln
+

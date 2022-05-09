@@ -1,0 +1,82 @@
+Mar.-24 17:17:40.879 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
+Mar.-24 17:17:40.979 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Mar.-24 17:17:41.022 [main] INFO  nextflow.cli.CmdRun - Launching `test.nf` [maniac_williams] - revision: df6fb1c8d9
+Mar.-24 17:17:41.133 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/madeline/.nextflow/plugins
+Mar.-24 17:17:41.136 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-24 17:17:41.155 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-24 17:17:41.156 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-24 17:17:41.162 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-24 17:17:41.178 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-24 17:17:41.270 [main] DEBUG nextflow.Session - Session uuid: ede5d3d9-01d1-4bcb-b0ee-c772a0376f72
+Mar.-24 17:17:41.270 [main] DEBUG nextflow.Session - Run name: maniac_williams
+Mar.-24 17:17:41.273 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-24 17:17:41.342 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 5.13.0-37-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.14+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 19667@tamarisk [127.0.1.1]
+  CPUs: 8 - Mem: 9.7 GB (1.3 GB) - Swap: 2 GB (2 GB)
+Mar.-24 17:17:41.388 [main] DEBUG nextflow.Session - Work-dir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work [ext2/ext3]
+Mar.-24 17:17:41.388 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/bin
+Mar.-24 17:17:41.401 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-24 17:17:41.421 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-24 17:17:41.497 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-24 17:17:41.643 [main] DEBUG nextflow.Session - Session start invoked
+Mar.-24 17:17:43.084 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-24 17:17:43.287 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:17:43.287 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:17:43.296 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar.-24 17:17:43.307 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=9.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar.-24 17:17:43.344 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-24 17:17:43.667 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:17:43.668 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:17:43.763 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:17:43.763 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:17:43.772 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:17:43.772 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:17:43.778 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: reduceQueries, runPangolin, removeWuhanHu1, buildFastTree
+Mar.-24 17:17:43.779 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar.-24 17:17:43.780 [main] DEBUG nextflow.Session - Session await
+Mar.-24 17:17:43.908 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:17:43.918 [Task submitter] INFO  nextflow.Session - [0e/ec199c] Submitted process > removeWuhanHu1
+Mar.-24 17:17:43.960 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: removeWuhanHu1; status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/0e/ec199cd028df7ef144888d62c55d9b]
+Mar.-24 17:17:43.998 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:17:44.005 [Task submitter] INFO  nextflow.Session - [2d/0fda95] Submitted process > buildFastTree (1)
+Mar.-24 17:17:44.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: buildFastTree (1); status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/2d/0fda9537f557d5a726c461797aa5cf]
+Mar.-24 17:17:44.055 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'runPangolin (1)'
+
+Caused by:
+  Failed to parse template script (your template may contain an error or be trying to use expressions not currently supported): org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/groovy/script/ScriptAA9D2EEF2C78DD8EC9FE62C8D142F89D: 1: Unexpected input: '(' @ line 1, column 15.
+   __$$_out.print("""#!/bin/bash
+                 ^
+
+1 error
+
+
+Source block:
+  #!/bin/bash
+  
+  sed -i -e 's/a/AAA/g' !{*} > fin.txt
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Mar.-24 17:17:44.062 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: Failed to parse template script (your template may contain an error or be trying to use expressions not currently supported): org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/groovy/script/ScriptAA9D2EEF2C78DD8EC9FE62C8D142F89D: 1: Unexpected input: '(' @ line 1, column 15.
+   __$$_out.print("""#!/bin/bash
+                 ^
+
+1 error
+ -- check template file: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/templates/sed.txt
+Mar.-24 17:17:44.090 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
+[process] runPangolin
+  status=ACTIVE
+  port 0: (queue) closed; channel: *
+  port 1: (cntrl) -     ; channel: $
+
+Mar.-24 17:17:44.095 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar.-24 17:17:44.095 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar.-24 17:17:44.107 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=25ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar.-24 17:17:44.281 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar.-24 17:17:44.304 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

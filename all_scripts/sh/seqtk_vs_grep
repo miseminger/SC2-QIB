@@ -1,0 +1,6 @@
+cog_fasta="/home/ubuntu/ongaeshi-mnt/civet/cog_global_*.fasta.xz"
+query_txt="/home/ubuntu/nf-test/sequencing_centre_trees/work/9c/5c73af02bbad6c114e0e9d42cb121e/query_samples.txt"
+
+
+time seqtk subseq $cog_fasta $query_txt > seqtk_query_samples.aln
+time xzgrep -w -A 1 -f $query_txt $cog_fasta --no-group-separator > grep_query_samples.aln

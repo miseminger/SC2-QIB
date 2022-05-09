@@ -1,0 +1,781 @@
+Apr-27 10:42:35.083 [main] DEBUG nextflow.cli.Launcher - $> nextflow run sequencing_centre_trees_pango.nf --start_date 2021-11-01 --end_date 2021-11-05 --diverseQueries false --centre NORW --max_samples_per_month false -with-report metrics.txt -resume
+Apr-27 10:42:35.896 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Apr-27 10:42:36.048 [main] INFO  nextflow.cli.CmdRun - Launching `sequencing_centre_trees_pango.nf` [nasty_dalembert] - revision: e16724dde0
+Apr-27 10:42:36.805 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/ubuntu/.nextflow/plugins
+Apr-27 10:42:36.818 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-27 10:42:36.917 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-27 10:42:36.919 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-27 10:42:36.938 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-27 10:42:37.039 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-27 10:42:37.423 [main] DEBUG nextflow.Session - Session uuid: be65f704-690a-4e15-8851-a3f6e4bf568e
+Apr-27 10:42:37.424 [main] DEBUG nextflow.Session - Run name: nasty_dalembert
+Apr-27 10:42:37.440 [main] DEBUG nextflow.Session - Executor pool size: 32
+Apr-27 10:42:37.647 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 4.15.0-76-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.18.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 14454@madeline-01 [192.168.10.248]
+  CPUs: 32 - Mem: 230.6 GB (163.4 GB) - Swap: 0 (0)
+Apr-27 10:42:38.036 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/nf-test/sequencing_centre_trees/work [ext2/ext3]
+Apr-27 10:42:38.037 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/nf-test/sequencing_centre_trees/bin
+Apr-27 10:42:38.087 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-27 10:42:38.208 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-27 10:42:38.672 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Apr-27 10:42:41.279 [main] DEBUG nextflow.Session - Session start invoked
+Apr-27 10:42:51.871 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-27 10:42:52.871 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:52.871 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:52.935 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-27 10:42:52.989 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=32; memory=230.6 GB; capacity=32; pollInterval=100ms; dumpInterval=5m
+Apr-27 10:42:53.272 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Apr-27 10:42:54.514 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:54.525 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:54.666 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:54.668 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:54.757 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:54.757 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:55.005 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:55.005 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:55.879 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:55.879 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:55.996 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:55.996 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:56.189 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:56.192 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:56.351 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:56.351 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:56.499 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-27 10:42:56.508 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-27 10:42:56.609 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: getFastaRecords, reduceQueries, runPangolin, maskProblematicSites, getCOGUKMetadata, removeWuhanHu1, buildFastTree, refineTree, chooseSamples, joinMetadata
+Apr-27 10:42:56.620 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Apr-27 10:42:56.632 [main] DEBUG nextflow.Session - Session await
+Apr-27 10:42:57.670 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 10:42:57.878 [Task submitter] INFO  nextflow.Session - [31/c56a52] Submitted process > chooseSamples (1)
+Apr-27 10:43:23.523 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: chooseSamples (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/31/c56a5267b7c463080299870b761314]
+Apr-27 10:43:23.625 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 10:43:23.629 [Task submitter] INFO  nextflow.Session - [b7/2dabd1] Submitted process > getFastaRecords (1)
+Apr-27 10:47:53.224 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 10:52:53.313 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 10:57:53.390 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:02:53.436 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:07:53.494 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:12:53.535 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:17:53.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:22:53.697 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:27:53.757 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:32:53.806 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:37:53.888 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:42:53.889 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 2; name: getFastaRecords (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:44:08.193 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getFastaRecords (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/b7/2dabd1f80a17da06520aff3a765a97]
+Apr-27 11:44:08.411 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 11:44:08.445 [Task submitter] INFO  nextflow.Session - [a1/d21b4d] Submitted process > maskProblematicSites (1)
+Apr-27 11:44:09.713 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: maskProblematicSites (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/a1/d21b4d714852352d4f95e90d1fc623]
+Apr-27 11:44:09.751 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 11:44:09.763 [Task submitter] INFO  nextflow.Session - [35/5ff066] Submitted process > removeWuhanHu1 (1)
+Apr-27 11:44:10.590 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: removeWuhanHu1 (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/35/5ff06695e9f2ce192ac6c25fd33151]
+Apr-27 11:44:10.694 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 11:44:10.705 [Task submitter] INFO  nextflow.Session - [e7/59ae53] Submitted process > runPangolin (1)
+Apr-27 11:44:10.751 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 11:44:10.787 [Task submitter] INFO  nextflow.Session - [6a/772f4a] Submitted process > getCOGUKMetadata (1)
+Apr-27 11:44:12.226 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 11:44:12.228 [Task submitter] INFO  nextflow.Session - [e0/2d3474] Submitted process > buildFastTree (1)
+Apr-27 11:44:31.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: buildFastTree (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e0/2d3474e4c522c90fa6bb671a0b842c]
+Apr-27 11:44:31.413 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-27 11:44:31.414 [Task submitter] INFO  nextflow.Session - [0a/04fa7e] Submitted process > refineTree (1)
+Apr-27 11:45:12.522 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: getCOGUKMetadata (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/6a/772f4a7352786415c71a9e48393783]
+Apr-27 11:47:53.973 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 11:52:54.075 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 11:57:54.131 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:02:54.137 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:07:54.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:12:54.305 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:17:54.349 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:22:54.397 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:27:54.461 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:32:54.553 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:37:54.609 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:42:54.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:47:54.689 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:52:54.767 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 12:57:54.781 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:02:54.840 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:07:54.931 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:12:54.962 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:17:55.039 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:22:55.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:27:55.117 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:32:55.123 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:37:55.213 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:42:55.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:47:55.357 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:52:55.456 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 13:57:55.476 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:02:55.518 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:07:55.576 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:12:55.670 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:17:55.677 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:22:55.731 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:27:55.749 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:32:55.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:37:55.909 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:42:55.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:47:56.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:52:56.094 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 14:57:56.193 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:02:56.282 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:07:56.323 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:12:56.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:17:56.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:22:56.481 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:27:56.478 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:32:56.569 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:37:56.614 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:42:56.700 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:47:56.770 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:52:56.824 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 15:57:56.916 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:02:56.980 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:07:57.024 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:12:57.058 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:17:57.086 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:22:57.091 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:27:57.167 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:32:57.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:37:57.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:42:57.298 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:47:57.299 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:52:57.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 16:57:57.413 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:02:57.470 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:07:57.537 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:12:57.555 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:17:57.648 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:22:57.670 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:27:57.767 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:32:57.789 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:37:57.823 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:42:57.851 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:47:57.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:52:57.952 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 17:57:58.020 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:02:58.088 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:07:58.171 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:12:58.200 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:17:58.254 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:22:58.320 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:27:58.394 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:32:58.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:37:58.440 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:42:58.462 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:47:58.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:52:58.514 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 18:57:58.529 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:02:58.626 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:07:58.654 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:12:58.662 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:17:58.667 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:22:58.716 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:27:58.754 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:32:58.792 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:37:58.832 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:42:58.876 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:47:58.933 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:52:58.944 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 19:57:58.971 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:02:59.017 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:07:59.032 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:12:59.108 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:17:59.130 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:22:59.144 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:27:59.158 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:32:59.250 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:37:59.321 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:42:59.339 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:47:59.359 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:52:59.415 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 20:57:59.439 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:02:59.614 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:07:59.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:12:59.638 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:17:59.663 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:22:59.721 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:27:59.746 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:32:59.792 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:37:59.833 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:42:59.910 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:47:59.945 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:52:59.957 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 21:58:00.031 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:03:00.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:08:00.144 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:13:00.204 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:18:00.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:23:00.291 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:28:00.312 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:33:00.409 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:38:00.428 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:43:00.532 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:48:00.591 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:53:00.634 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 22:58:00.682 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:03:00.685 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:08:00.716 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:13:00.797 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:18:00.894 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:23:00.905 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:28:00.999 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:33:01.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:38:01.104 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:43:01.106 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:48:01.104 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:53:01.157 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-27 23:58:01.167 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:03:01.248 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:08:01.268 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:13:01.362 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:18:01.406 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:23:01.466 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:28:01.547 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:33:01.545 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:38:01.582 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:43:01.629 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:48:01.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:53:01.684 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 00:58:01.754 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:03:01.770 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:08:02.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:13:02.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:18:02.107 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:23:02.139 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:28:02.155 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:33:02.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:38:02.216 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:43:02.249 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:48:02.288 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:53:02.324 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 01:58:02.398 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:03:02.457 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:08:02.463 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:13:02.507 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:18:02.572 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:23:02.652 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:28:02.656 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:33:02.709 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:38:02.738 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:43:02.819 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:48:02.885 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:53:02.978 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 02:58:03.020 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:03:03.042 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:08:03.089 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:13:03.151 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:18:03.207 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:23:03.277 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:28:03.327 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:33:03.371 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:38:03.462 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:43:03.526 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:48:03.630 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:53:03.783 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 03:58:03.810 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+~> TaskHandler[id: 8; name: refineTree (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 04:02:19.157 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: refineTree (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/0a/04fa7ef86bc6b1f65ae274601c94df]
+Apr-28 04:03:03.813 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:08:03.913 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:13:03.993 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:18:04.031 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:23:04.058 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:28:04.102 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:33:04.179 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:38:04.212 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:43:04.310 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:48:04.409 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:53:04.449 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 04:58:04.439 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:03:04.520 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:08:04.573 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:13:04.603 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:18:04.668 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:23:04.740 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:28:04.774 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:33:04.853 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:38:04.949 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:43:05.044 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:48:05.092 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:53:05.173 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 05:58:05.202 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:03:05.205 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:08:05.254 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:13:05.349 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:18:05.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:23:05.452 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:28:05.468 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:33:05.523 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:38:05.579 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:43:05.602 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:48:05.607 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:53:05.650 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 06:58:05.720 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:03:05.762 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:08:05.782 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:13:05.884 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:18:05.889 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:23:05.932 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:28:06.018 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 6; name: runPangolin (1); status: RUNNING; exit: -; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:28:30.150 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: runPangolin (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/e7/59ae53e1ff756b0168368f536de6d2]
+Apr-28 07:28:30.492 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-28 07:28:30.592 [Task submitter] INFO  nextflow.Session - [48/8df348] Submitted process > joinMetadata (1)
+Apr-28 07:28:32.057 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: joinMetadata (1); status: COMPLETED; exit: 0; error: -; workDir: /home/ubuntu/nf-test/sequencing_centre_trees/work/48/8df348f0bfef69b86be5db3cd3e24d]
+Apr-28 07:28:32.058 [main] DEBUG nextflow.Session - Session await > all process finished
+Apr-28 07:28:32.077 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-28 07:28:32.111 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=9; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1d 13h 4m 40s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Apr-28 07:28:32.111 [main] DEBUG nextflow.trace.ReportObserver - Flow completing -- rendering html report
+Apr-28 07:28:32.686 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":{"mean":99.6,"min":99.6,"q1":99.6,"q2":99.6,"q3":99.6,"max":99.6,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"process":"chooseSamples","mem":{"mean":1041850368,"min":1041850368,"q1":1041850368,"q2":1041850368,"q3":1041850368,"max":1041850368,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":1386053632,"min":1386053632,"q1":1386053632,"q2":1386053632,"q3":1386053632,"max":1386053632,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"reads":{"mean":68573027,"min":68573027,"q1":68573027,"q2":68573027,"q3":68573027,"max":68573027,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"cpu":{"mean":99.6,"min":99.6,"q1":99.6,"q2":99.6,"q3":99.6,"max":99.6,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"time":{"mean":25357,"min":25357,"q1":25357,"q2":25357,"q3":25357,"max":25357,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"},"writes":{"mean":31784,"min":31784,"q1":31784,"q2":31784,"q3":31784,"max":31784,"minLabel":"chooseSamples (1)","maxLabel":"chooseSamples (1)","q1Label":"chooseSamples (1)","q2Label":"chooseSamples (1)","q3Label":"chooseSamples (1)"}},{"cpuUsage":{"mean":173.1,"min":173.1,"q1":173.1,"q2":173.1,"q3":173.1,"max":173.1,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"process":"getFastaRecords","mem":{"mean":27021312,"min":27021312,"q1":27021312,"q2":27021312,"q3":27021312,"max":27021312,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":78315520,"min":78315520,"q1":78315520,"q2":78315520,"q3":78315520,"max":78315520,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"reads":{"mean":273178814127,"min":273178814127,"q1":273178814127,"q2":273178814127,"q3":273178814127,"max":273178814127,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"cpu":{"mean":173.1,"min":173.1,"q1":173.1,"q2":173.1,"q3":173.1,"max":173.1,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"time":{"mean":3644234,"min":3644234,"q1":3644234,"q2":3644234,"q3":3644234,"max":3644234,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"},"writes":{"mean":272785262579,"min":272785262579,"q1":272785262579,"q2":272785262579,"q3":272785262579,"max":272785262579,"minLabel":"getFastaRecords (1)","maxLabel":"getFastaRecords (1)","q1Label":"getFastaRecords (1)","q2Label":"getFastaRecords (1)","q3Label":"getFastaRecords (1)"}},{"cpuUsage":{"mean":96.8,"min":96.8,"q1":96.8,"q2":96.8,"q3":96.8,"max":96.8,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"process":"maskProblematicSites","mem":{"mean":11350016,"min":11350016,"q1":11350016,"q2":11350016,"q3":11350016,"max":11350016,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":37703680,"min":37703680,"q1":37703680,"q2":37703680,"q3":37703680,"max":37703680,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"reads":{"mean":35191687,"min":35191687,"q1":35191687,"q2":35191687,"q3":35191687,"max":35191687,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"cpu":{"mean":96.8,"min":96.8,"q1":96.8,"q2":96.8,"q3":96.8,"max":96.8,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"time":{"mean":1146,"min":1146,"q1":1146,"q2":1146,"q3":1146,"max":1146,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"},"writes":{"mean":34450866,"min":34450866,"q1":34450866,"q2":34450866,"q3":34450866,"max":34450866,"minLabel":"maskProblematicSites (1)","maxLabel":"maskProblematicSites (1)","q1Label":"maskProblematicSites (1)","q2Label":"maskProblematicSites (1)","q3Label":"maskProblematicSites (1)"}},{"cpuUsage":{"mean":82.3,"min":82.3,"q1":82.3,"q2":82.3,"q3":82.3,"max":82.3,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"process":"removeWuhanHu1","mem":{"mean":6000640,"min":6000640,"q1":6000640,"q2":6000640,"q3":6000640,"max":6000640,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":31158272,"min":31158272,"q1":31158272,"q2":31158272,"q3":31158272,"max":31158272,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"reads":{"mean":34579838,"min":34579838,"q1":34579838,"q2":34579838,"q3":34579838,"max":34579838,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"cpu":{"mean":82.3,"min":82.3,"q1":82.3,"q2":82.3,"q3":82.3,"max":82.3,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"time":{"mean":634,"min":634,"q1":634,"q2":634,"q3":634,"max":634,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"},"writes":{"mean":34420864,"min":34420864,"q1":34420864,"q2":34420864,"q3":34420864,"max":34420864,"minLabel":"removeWuhanHu1 (1)","maxLabel":"removeWuhanHu1 (1)","q1Label":"removeWuhanHu1 (1)","q2Label":"removeWuhanHu1 (1)","q3Label":"removeWuhanHu1 (1)"}},{"cpuUsage":{"mean":224.6,"min":224.6,"q1":224.6,"q2":224.6,"q3":224.6,"max":224.6,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"process":"buildFastTree","mem":{"mean":39813120,"min":39813120,"q1":39813120,"q2":39813120,"q3":39813120,"max":39813120,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":116985856,"min":116985856,"q1":116985856,"q2":116985856,"q3":116985856,"max":116985856,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"reads":{"mean":137831511,"min":137831511,"q1":137831511,"q2":137831511,"q3":137831511,"max":137831511,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"cpu":{"mean":224.6,"min":224.6,"q1":224.6,"q2":224.6,"q3":224.6,"max":224.6,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"time":{"mean":18785,"min":18785,"q1":18785,"q2":18785,"q3":18785,"max":18785,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"},"writes":{"mean":103329995,"min":103329995,"q1":103329995,"q2":103329995,"q3":103329995,"max":103329995,"minLabel":"buildFastTree (1)","maxLabel":"buildFastTree (1)","q1Label":"buildFastTree (1)","q2Label":"buildFastTree (1)","q3Label":"buildFastTree (1)"}},{"cpuUsage":{"mean":97.6,"min":97.6,"q1":97.6,"q2":97.6,"q3":97.6,"max":97.6,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"process":"getCOGUKMetadata","mem":{"mean":27181056,"min":27181056,"q1":27181056,"q2":27181056,"q3":27181056,"max":27181056,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":78155776,"min":78155776,"q1":78155776,"q2":78155776,"q3":78155776,"max":78155776,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"reads":{"mean":954322538,"min":954322538,"q1":954322538,"q2":954322538,"q3":954322538,"max":954322538,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"cpu":{"mean":97.6,"min":97.6,"q1":97.6,"q2":97.6,"q3":97.6,"max":97.6,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"time":{"mean":61541,"min":61541,"q1":61541,"q2":61541,"q3":61541,"max":61541,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"},"writes":{"mean":860270209,"min":860270209,"q1":860270209,"q2":860270209,"q3":860270209,"max":860270209,"minLabel":"getCOGUKMetadata (1)","maxLabel":"getCOGUKMetadata (1)","q1Label":"getCOGUKMetadata (1)","q2Label":"getCOGUKMetadata (1)","q3Label":"getCOGUKMetadata (1)"}},{"cpuUsage":{"mean":99.3,"min":99.3,"q1":99.3,"q2":99.3,"q3":99.3,"max":99.3,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"},"process":"refineTree","mem":{"mean":1251164160,"min":1251164160,"q1":1251164160,"q2":1251164160,"q3":1251164160,"max":1251164160,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":1319813120,"min":1319813120,"q1":1319813120,"q2":1319813120,"q3":1319813120,"max":1319813120,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"},"reads":{"mean":34621995,"min":34621995,"q1":34621995,"q2":34621995,"q3":34621995,"max":34621995,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"},"cpu":{"mean":99.3,"min":99.3,"q1":99.3,"q2":99.3,"q3":99.3,"max":99.3,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"},"time":{"mean":58667330,"min":58667330,"q1":58667330,"q2":58667330,"q3":58667330,"max":58667330,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"},"writes":{"mean":50813012,"min":50813012,"q1":50813012,"q2":50813012,"q3":50813012,"max":50813012,"minLabel":"refineTree (1)","maxLabel":"refineTree (1)","q1Label":"refineTree (1)","q2Label":"refineTree (1)","q3Label":"refineTree (1)"}},{"cpuUsage":{"mean":100.6,"min":100.6,"q1":100.6,"q2":100.6,"q3":100.6,"max":100.6,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"process":"runPangolin","mem":{"mean":596570112,"min":596570112,"q1":596570112,"q2":596570112,"q3":596570112,"max":596570112,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":2183184384,"min":2183184384,"q1":2183184384,"q2":2183184384,"q3":2183184384,"max":2183184384,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"reads":{"mean":122426441788,"min":122426441788,"q1":122426441788,"q2":122426441788,"q3":122426441788,"max":122426441788,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"cpu":{"mean":100.6,"min":100.6,"q1":100.6,"q2":100.6,"q3":100.6,"max":100.6,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"time":{"mean":71059224,"min":71059224,"q1":71059224,"q2":71059224,"q3":71059224,"max":71059224,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"},"writes":{"mean":56345051889,"min":56345051889,"q1":56345051889,"q2":56345051889,"q3":56345051889,"max":56345051889,"minLabel":"runPangolin (1)","maxLabel":"runPangolin (1)","q1Label":"runPangolin (1)","q2Label":"runPangolin (1)","q3Label":"runPangolin (1)"}},{"cpuUsage":{"mean":122.4,"min":122.4,"q1":122.4,"q2":122.4,"q3":122.4,"max":122.4,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"},"process":"joinMetadata","mem":{"mean":16048128,"min":16048128,"q1":16048128,"q2":16048128,"q3":16048128,"max":16048128,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"},"memUsage":null,"timeUsage":null,"vmem":{"mean":52260864,"min":52260864,"q1":52260864,"q2":52260864,"q3":52260864,"max":52260864,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"},"reads":{"mean":9137813,"min":9137813,"q1":9137813,"q2":9137813,"q3":9137813,"max":9137813,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"},"cpu":{"mean":122.4,"min":122.4,"q1":122.4,"q2":122.4,"q3":122.4,"max":122.4,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"},"time":{"mean":1295,"min":1295,"q1":1295,"q2":1295,"q3":1295,"max":1295,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"},"writes":{"mean":191695,"min":191695,"q1":191695,"q2":191695,"q3":191695,"max":191695,"minLabel":"joinMetadata (1)","maxLabel":"joinMetadata (1)","q1Label":"joinMetadata (1)","q2Label":"joinMetadata (1)","q3Label":"joinMetadata (1)"}}]
+Apr-28 07:28:35.291 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Apr-28 07:28:35.875 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

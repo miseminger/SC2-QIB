@@ -1,0 +1,87 @@
+---
+title: "COG-UK mini dataset exploratory analysis"
+author: "Madeline Iseminger"
+date: "20/01/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+options(stringsAsFactors = FALSE)
+library(tidyverse)
+library(scales)
+library(lubridate)
+library(knitr)
+library(ape)
+library(ggtree)
+```
+
+## Introduction
+
+This is an exploratory/remembering-how-to-use-R notebook, exploring a dataset of already-aligned ORW genomes from COG-UK.
+
+```{r load data}
+metadata <- read.csv("/home/madeline/QIB_Internship/COG-UK-data/ORW_metadata.csv", header=TRUE)
+
+head(metadata)
+```
+
+## Exploration
+
+Total counts over all time for each lineage:
+
+```{r lineagecount, echo=FALSE, results='asis'}
+#barplot(table(metadata$lineage),main="Lineages present",ylab="Frequency",xlab="PANGO Lineage",las=2, cex.names=0.2)
+kable(table(metadata$lineage))
+
+```
+```{r, echo=FALSE}
+#change sample_date column to POSIXct object
+metadata$sample_date <- as.POSIXct(lubridate::ymd_hms(metadata$sample_date, truncated = 3), "%Y-%m-%d")
+```
+Check how many sequences there are over time:
+```{r seqcount, echo=FALSE}
+ggplot(metadata, aes(sample_date, ..count..)) + 
+    geom_histogram() +
+    theme_bw() + xlab("date") + ylab("# sequences available") +
+    theme(axis.text.x = element_text(angle = 90)) +
+    scale_x_datetime(breaks = date_breaks("1 months"),
+                     labels = date_format("%Y-%b"))
+```
+Now look at all the lineages with >=100 sequences present in the dataset.  Plot a histogram by date with only these sequences.
+```{r, echo=FALSE}
+metadata %>% filter((lineage == "B.1") | (lineage == "B.1.1.119") | (lineage == "B.1.1.198") | (lineage == "B.1.1.279") | (lineage == "B.1.1.7") | (lineage == "B.1.177") | (lineage == "B.1.177.26")) %>% ggplot(aes(sample_date, ..count.., color=lineage, fill=lineage)) + 
+    geom_histogram(alpha=0.5) +
+    theme_bw() + xlab(NULL) +
+    theme(axis.text.x = element_text(angle = 90)) +
+    scale_x_datetime(breaks = date_breaks("1 months"), labels = date_format("%Y-%b"))
+```
+Now by percentage instead:
+```{r, echo=FALSE}
+metadata %>% filter((lineage == "B.1") | (lineage == "B.1.1.119") | (lineage == "B.1.1.198") | (lineage == "B.1.1.279") | (lineage == "B.1.1.7") | (lineage == "B.1.177") | (lineage == "B.1.177.26")) %>% ggplot(aes(sample_date, ..count../sum(..count..)*100, color=lineage, fill=lineage)) + 
+    geom_histogram(alpha=0.5, freq=FALSE) +
+    theme_bw() + xlab(NULL) +
+    theme(axis.text.x = element_text(angle = 90)) +
+    scale_x_datetime(breaks = date_breaks("1 months"), labels = date_format("%Y-%b"))
+```
+
+Count the number of unique lineages per day:
+
+```{r, echo=FALSE}
+metadata[complete.cases(metadata[ , 'sample_date']),] %>% 
+     group_by(sample_date) %>% 
+     summarise(n=n_distinct(lineage)) %>%
+     ggplot(., aes(x=sample_date, y=n)) +
+            geom_bar(stat='identity') +
+  theme(axis.text.x = element_text(angle = 90)) +
+    scale_x_datetime(breaks = date_breaks("1 months"),
+                     labels = date_format("%Y-%b"))
+```
+View phylogenetic tree:
+```{r, echo=FALSE}
+tree <- ape::read.tree("/home/madeline/QIB_Internship/COG-UK-data/ORW_tree.newick")
+#plot(all_tree)
+ggplot(tree, aes(x, y)) + geom_tree() + theme_tree() + xlab("") + ylab("")
+```

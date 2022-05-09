@@ -1,0 +1,50 @@
+
+0.00	-TreeAnc: set-up
+
+Attempting to parse dates...
+	Using column 'sequence_name' as name. This needs match the taxon names in the tree!!
+	Using column 'sample_date' as date.
+
+0.24	TreeTime.reroot: with method or node: least-squares
+
+0.25	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+
+1.95	TreeTime.reroot: with method or node: least-squares
+
+1.96	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+The following leaves don't follow a loose clock and will be ignored in rate estimation:
+	_England_NORW-EB706_2020_
+	_England_NORW-EF09E_2020_
+	_England_NORW-EB7D9_2020_
+	_England_NORW-E9850_2020_
+
+3.57	TreeTime.reroot: with method or node: least-squares
+
+3.58	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+
+ Root-Tip-Regression:
+ --rate:	5.663e-04
+ --r^2:  	0.12
+
+The R^2 value indicates the fraction of variation inroot-to-tip
+distance explained by the sampling times.Higher values corresponds
+more clock-like behavior (max 1.0).
+
+The rate is the slope of the best fit of the date tothe root-to-tip
+distance and provides an estimate ofthe substitution rate. The rate
+needs to be positive!Negative rates suggest an inappropriate root.
+
+
+The estimated rate and tree correspond to a root date:
+
+--- root-date:	 2019.90
+
+
+--- re-rooted tree written to 
+	clock_results2/rerooted.newick
+
+--- wrote dates and root-to-tip distances to 
+	clock_results2/rtt.csv
+
+--- root-to-tip plot saved to  
+	clock_results2/root_to_tip_regression.pdf

@@ -1,0 +1,34 @@
+Character to attribute mapping:
+  F: ?
+  A: ALDP
+  B: HSLL
+  C: LOND
+  D: MILK
+  E: NORW
+
+
+Substitution rate (mu): 328.447384
+
+Equilibrium frequencies (pi_i):
+  A: 0.2133
+  B: 0.1831
+  C: 0.1802
+  D: 0.1764
+  E: 0.247
+
+Symmetrized rates from j->i (W_ij):
+	A	B	C	D	E
+  A	0	1.0348	1.0122	1.0065	1.9941
+  B	1.0348	0	0.9481	0.95	1.5099
+  C	1.0122	0.9481	0	1.0115	1.4786
+  D	1.0065	0.95	1.0115	0	1.1368
+  E	1.9941	1.5099	1.4786	1.1368	0
+
+Actual rates from j->i (Q_ij):
+	A	B	C	D	E
+  A	0	0.2207	0.2159	0.2147	0.4253
+  B	0.1895	0	0.1736	0.174	0.2765
+  C	0.1824	0.1709	0	0.1823	0.2665
+  D	0.1775	0.1675	0.1784	0	0.2005
+  E	0.4926	0.373	0.3652	0.2808	0
+

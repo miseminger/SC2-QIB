@@ -1,0 +1,55 @@
+Mar.-24 17:21:30.095 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
+Mar.-24 17:21:30.219 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Mar.-24 17:21:30.269 [main] INFO  nextflow.cli.CmdRun - Launching `test.nf` [marvelous_wilson] - revision: df6fb1c8d9
+Mar.-24 17:21:30.400 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/madeline/.nextflow/plugins
+Mar.-24 17:21:30.403 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-24 17:21:30.423 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-24 17:21:30.425 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-24 17:21:30.431 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-24 17:21:30.449 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-24 17:21:30.539 [main] DEBUG nextflow.Session - Session uuid: e3dfd079-9205-4866-891d-e120f0eeb767
+Mar.-24 17:21:30.539 [main] DEBUG nextflow.Session - Run name: marvelous_wilson
+Mar.-24 17:21:30.543 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-24 17:21:30.610 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 5.13.0-37-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.14+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 20055@tamarisk [127.0.1.1]
+  CPUs: 8 - Mem: 9.7 GB (1.3 GB) - Swap: 2 GB (2 GB)
+Mar.-24 17:21:30.644 [main] DEBUG nextflow.Session - Work-dir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work [ext2/ext3]
+Mar.-24 17:21:30.644 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/bin
+Mar.-24 17:21:30.656 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-24 17:21:30.676 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-24 17:21:30.735 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-24 17:21:30.880 [main] DEBUG nextflow.Session - Session start invoked
+Mar.-24 17:21:32.103 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-24 17:21:32.243 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:21:32.243 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:21:32.250 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar.-24 17:21:32.257 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=9.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar.-24 17:21:32.291 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-24 17:21:32.480 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:21:32.480 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:21:32.570 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:21:32.570 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:21:32.581 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:21:32.582 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:21:32.590 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: reduceQueries, runPangolin, removeWuhanHu1, buildFastTree
+Mar.-24 17:21:32.591 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar.-24 17:21:32.591 [main] DEBUG nextflow.Session - Session await
+Mar.-24 17:21:32.740 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:21:32.749 [Task submitter] INFO  nextflow.Session - [19/3302a0] Submitted process > removeWuhanHu1
+Mar.-24 17:21:32.790 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: removeWuhanHu1; status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/19/3302a0f844dc39042a53a042abeab6]
+Mar.-24 17:21:32.857 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:21:32.858 [Task submitter] INFO  nextflow.Session - [48/b3725f] Submitted process > buildFastTree (1)
+Mar.-24 17:21:32.890 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: buildFastTree (1); status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/48/b3725fce5f5fa8020dd962d6609b67]
+Mar.-24 17:21:32.931 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:21:32.932 [Task submitter] INFO  nextflow.Session - [3f/33af3b] Submitted process > runPangolin (1)
+Mar.-24 17:21:32.962 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: runPangolin (1); status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/3f/33af3b2a47217ee3c5c9ac24ed27b2]
+Mar.-24 17:21:32.964 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar.-24 17:21:32.966 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar.-24 17:21:32.976 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=30ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar.-24 17:21:33.167 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar.-24 17:21:33.184 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

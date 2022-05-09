@@ -1,0 +1,140 @@
+Apr-22 15:23:18.230 [main] DEBUG nextflow.cli.Launcher - $> nextflow run sequencing_centre_trees.nf --start_date 2021-11-01 --end_date 2021-11-05 --diverseQueries false --centre NORW --max_samples_per_month false -with-report metrics.txt -resume
+Apr-22 15:23:20.018 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Apr-22 15:23:20.223 [main] INFO  nextflow.cli.CmdRun - Launching `sequencing_centre_trees.nf` [boring_lumiere] - revision: 8c5c408eba
+Apr-22 15:23:21.849 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/ubuntu/.nextflow/plugins
+Apr-22 15:23:21.900 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-22 15:23:22.242 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-22 15:23:22.267 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-22 15:23:22.329 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-22 15:23:22.537 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-22 15:23:23.527 [main] DEBUG nextflow.Session - Session uuid: 4f241b29-42a6-41ce-bff7-7bf045138a2c
+Apr-22 15:23:23.533 [main] DEBUG nextflow.Session - Run name: boring_lumiere
+Apr-22 15:23:23.573 [main] DEBUG nextflow.Session - Executor pool size: 32
+Apr-22 15:23:24.110 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 4.15.0-76-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.14.1+1-Ubuntu-0ubuntu1.18.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 21727@madeline-01 [192.168.10.248]
+  CPUs: 32 - Mem: 230.6 GB (164.4 GB) - Swap: 0 (0)
+Apr-22 15:23:24.685 [main] DEBUG nextflow.Session - Work-dir: /home/ubuntu/nf-test/sequencing_centre_trees/work [ext2/ext3]
+Apr-22 15:23:24.685 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ubuntu/nf-test/sequencing_centre_trees/bin
+Apr-22 15:23:24.770 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-22 15:23:24.958 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-22 15:23:25.622 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Apr-22 15:23:29.059 [main] DEBUG nextflow.Session - Session start invoked
+Apr-22 15:23:39.500 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-22 15:23:40.685 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:40.685 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:40.772 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-22 15:23:40.855 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=32; memory=230.6 GB; capacity=32; pollInterval=100ms; dumpInterval=5m
+Apr-22 15:23:41.060 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 33; maxThreads: 1000
+Apr-22 15:23:42.384 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:42.384 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:42.545 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:42.545 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:42.731 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:42.732 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:42.937 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:42.943 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:43.588 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:43.619 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:43.822 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:43.823 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:44.018 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-22 15:23:44.022 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-22 15:23:44.340 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown variable 'lineages_ch'
+Apr-22 15:23:44.967 [main] DEBUG nextflow.Session - The following nodes are still active:
+[process] chooseSamples
+  status=ACTIVE
+  port 0: (queue) closed; channel: cog_meta
+  port 1: (cntrl) -     ; channel: $
+
+[process] getFastaRecords
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: query_samples.txt
+  port 1: (queue) OPEN  ; channel: cog_fasta
+  port 2: (value) bound ; channel: wuhan_hu_1
+  port 3: (cntrl) -     ; channel: $
+
+[process] maskProblematicSites
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: query_samples_ref.aln
+  port 1: (cntrl) -     ; channel: $
+
+[process] removeWuhanHu1
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: query_samples_ref_masked.aln
+  port 1: (cntrl) -     ; channel: $
+
+[process] buildFastTree
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: *aln
+  port 1: (cntrl) -     ; channel: $
+
+[process] refineTree
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: reformatted.aln
+  port 1: (queue) OPEN  ; channel: fast.aln.tre
+  port 2: (cntrl) -     ; channel: $
+
+[process] getCOGUKMetadata
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: *aln
+  port 1: (queue) OPEN  ; channel: cog_meta
+  port 2: (cntrl) -     ; channel: $
+
+Apr-22 15:23:45.658 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: Unknown variable 'lineages_ch'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:295)
+	at nextflow.script.ProcessConfig.getProperty(ProcessConfig.groovy:277)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:310)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+	at Script_adb2dbbb$_runScript_closure10.doCall(Script_adb2dbbb:179)
+	at Script_adb2dbbb$_runScript_closure10.doCall(Script_adb2dbbb)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.ProcessFactory.createProcessor(ProcessFactory.groovy:95)
+	at nextflow.script.ProcessFactory$createProcessor.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at nextflow.script.ProcessFactory$createProcessor.call(Unknown Source)
+	at nextflow.script.BaseScript.process(BaseScript.groovy:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at Script_adb2dbbb.runScript(Script_adb2dbbb:176)
+	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:163)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:200)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:221)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:212)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:120)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:308)
+	at nextflow.cli.Launcher.run(Launcher.groovy:480)
+	at nextflow.cli.Launcher.main(Launcher.groovy:639)

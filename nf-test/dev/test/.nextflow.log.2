@@ -1,0 +1,80 @@
+Mar.-24 17:35:03.180 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test.nf
+Mar.-24 17:35:03.312 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Mar.-24 17:35:03.354 [main] INFO  nextflow.cli.CmdRun - Launching `test.nf` [crazy_lichterman] - revision: 49a796f2d4
+Mar.-24 17:35:03.510 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/madeline/.nextflow/plugins
+Mar.-24 17:35:03.513 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-24 17:35:03.533 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-24 17:35:03.535 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-24 17:35:03.541 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-24 17:35:03.560 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-24 17:35:03.657 [main] DEBUG nextflow.Session - Session uuid: 6bd8ab2e-fe84-4704-8499-52955be1aacb
+Mar.-24 17:35:03.657 [main] DEBUG nextflow.Session - Run name: crazy_lichterman
+Mar.-24 17:35:03.662 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-24 17:35:03.731 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 5.13.0-37-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.14+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 21226@tamarisk [127.0.1.1]
+  CPUs: 8 - Mem: 9.7 GB (1.3 GB) - Swap: 2 GB (2 GB)
+Mar.-24 17:35:03.769 [main] DEBUG nextflow.Session - Work-dir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work [ext2/ext3]
+Mar.-24 17:35:03.769 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/bin
+Mar.-24 17:35:03.782 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-24 17:35:03.802 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-24 17:35:03.866 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-24 17:35:04.010 [main] DEBUG nextflow.Session - Session start invoked
+Mar.-24 17:35:05.741 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-24 17:35:05.941 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:35:05.941 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:35:05.955 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar.-24 17:35:05.966 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=9.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar.-24 17:35:06.018 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-24 17:35:06.247 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:35:06.247 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:35:06.353 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:35:06.353 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:35:06.363 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-24 17:35:06.363 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-24 17:35:06.370 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: reduceQueries, runPangolin, removeWuhanHu1, buildFastTree
+Mar.-24 17:35:06.371 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar.-24 17:35:06.371 [main] DEBUG nextflow.Session - Session await
+Mar.-24 17:35:06.513 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:35:06.520 [Task submitter] INFO  nextflow.Session - [c8/142d27] Submitted process > removeWuhanHu1
+Mar.-24 17:35:06.562 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: removeWuhanHu1; status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/c8/142d27e66f814d593f82930bf66e23]
+Mar.-24 17:35:06.607 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:35:06.610 [Task submitter] INFO  nextflow.Session - [25/4150ee] Submitted process > buildFastTree (1)
+Mar.-24 17:35:06.648 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: buildFastTree (1); status: COMPLETED; exit: 0; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/25/4150eefbe0b7c1265823203ed8cea3]
+Mar.-24 17:35:06.681 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-24 17:35:06.682 [Task submitter] INFO  nextflow.Session - [9a/8aa298] Submitted process > runPangolin (1)
+Mar.-24 17:35:06.712 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: runPangolin (1); status: COMPLETED; exit: 2; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/9a/8aa298eda0adfcbfd25c925783faa6]
+Mar.-24 17:35:06.758 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'runPangolin (1)'
+
+Caused by:
+  Process `runPangolin (1)` terminated with an error exit status (2)
+
+Command executed [/home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/templates/sed.txt]:
+
+  #!/bin/bash
+  
+  sed 's/a/AAA/g' bird > fin.txt
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  sed: can't read bird: No such file or directory
+
+Work dir:
+  /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/test/work/9a/8aa298eda0adfcbfd25c925783faa6
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Mar.-24 17:35:06.765 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar.-24 17:35:06.766 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `runPangolin (1)` terminated with an error exit status (2)
+Mar.-24 17:35:06.793 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar.-24 17:35:06.805 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=8ms; failedDuration=4ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar.-24 17:35:06.988 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar.-24 17:35:07.002 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

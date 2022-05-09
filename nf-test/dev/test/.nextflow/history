@@ -1,0 +1,8 @@
+2022-03-24 17:17:41	3.3s	maniac_williams	ERR	df6fb1c8d9aaf000ea4b9e0875ef0096	ede5d3d9-01d1-4bcb-b0ee-c772a0376f72	nextflow run test.nf
+2022-03-24 17:18:07	3.6s	small_stone	OK	df6fb1c8d9aaf000ea4b9e0875ef0096	8fac9446-6a37-4594-9979-68cdea7188d5	nextflow run test.nf
+2022-03-24 17:21:30	3.2s	marvelous_wilson	OK	df6fb1c8d9aaf000ea4b9e0875ef0096	e3dfd079-9205-4866-891d-e120f0eeb767	nextflow run test.nf
+2022-03-24 17:33:15	3.1s	gigantic_newton	OK	566051e6c17419a3e5c4cb672ed3e024	2715231a-ccaa-4503-b8bc-0b5aa25351c4	nextflow run test.nf
+2022-03-24 17:33:58	3.1s	nauseous_fermat	OK	c86c22f4d4d5b49c70506ea586f933d3	6d58bdc1-8c25-494d-be74-c2f8ac789c71	nextflow run test.nf
+2022-03-24 17:35:03	4s	crazy_lichterman	ERR	49a796f2d44d0c46b8d3c71521f6468f	6bd8ab2e-fe84-4704-8499-52955be1aacb	nextflow run test.nf
+2022-03-24 17:35:42	3s	fabulous_coulomb	ERR	c86c22f4d4d5b49c70506ea586f933d3	f38e25f9-6dee-4b23-9b65-b8a0f1734807	nextflow run test.nf
+2022-03-24 17:36:03	3.1s	shrivelled_yonath	OK	a899f67419daa4f410d4d99f60fe46ef	d93b6f9c-f34a-4492-a825-6d6601a68aaf	nextflow run test.nf

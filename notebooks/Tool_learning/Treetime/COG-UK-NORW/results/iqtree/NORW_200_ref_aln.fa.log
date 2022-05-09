@@ -1,0 +1,679 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Mar 23 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    tamarisk (AVX2, FMA3, 9 GB RAM)
+Command: iqtree -s ../data/COG-UK-NORW/results/NORW_200_ref_aln.fa -pre ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa
+Seed:    206863 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Feb  7 16:56:25 2022
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../data/COG-UK-NORW/results/NORW_200_ref_aln.fa ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 201 sequences with 29903 columns, 1571 distinct patterns
+174 parsimony-informative, 241 singleton sites, 29488 constant sites
+WARNING: Some sequence names are changed as follows:
+England/NORW-22D223/2021 -> England_NORW-22D223_2021
+England/NORW-22D1CC/2021 -> England_NORW-22D1CC_2021
+England/NORW-22D162/2021 -> England_NORW-22D162_2021
+England/NORW-22B37D/2021 -> England_NORW-22B37D_2021
+England/NORW-22D2C9/2021 -> England_NORW-22D2C9_2021
+England/NORW-22D1BD/2021 -> England_NORW-22D1BD_2021
+England/NORW-22D36C/2021 -> England_NORW-22D36C_2021
+England/NORW-22463F/2021 -> England_NORW-22463F_2021
+England/NORW-22465D/2021 -> England_NORW-22465D_2021
+England/NORW-22D205/2021 -> England_NORW-22D205_2021
+England/NORW-22B4C5/2021 -> England_NORW-22B4C5_2021
+England/NORW-22D27E/2021 -> England_NORW-22D27E_2021
+England/NORW-22D180/2021 -> England_NORW-22D180_2021
+England/NORW-22466C/2021 -> England_NORW-22466C_2021
+England/NORW-22464E/2021 -> England_NORW-22464E_2021
+England/NORW-22B085/2021 -> England_NORW-22B085_2021
+England/NORW-22D302/2021 -> England_NORW-22D302_2021
+England/NORW-22D1AE/2021 -> England_NORW-22D1AE_2021
+England/NORW-22D34E/2021 -> England_NORW-22D34E_2021
+England/NORW-22B00D/2021 -> England_NORW-22B00D_2021
+England/NORW-22B304/2021 -> England_NORW-22B304_2021
+England/NORW-22D214/2021 -> England_NORW-22D214_2021
+England/NORW-22D250/2021 -> England_NORW-22D250_2021
+England/NORW-22468A/2021 -> England_NORW-22468A_2021
+England/NORW-22D171/2021 -> England_NORW-22D171_2021
+England/NORW-22D26F/2021 -> England_NORW-22D26F_2021
+England/NORW-22D0DE/2021 -> England_NORW-22D0DE_2021
+England/NORW-22D3D5/2021 -> England_NORW-22D3D5_2021
+England/NORW-22D2F6/2021 -> England_NORW-22D2F6_2021
+England/NORW-22B2F8/2021 -> England_NORW-22B2F8_2021
+England/NORW-22D2BA/2021 -> England_NORW-22D2BA_2021
+England/NORW-22AF4D/2021 -> England_NORW-22AF4D_2021
+England/NORW-22D19F/2021 -> England_NORW-22D19F_2021
+England/NORW-22D108/2021 -> England_NORW-22D108_2021
+England/NORW-22D38A/2021 -> England_NORW-22D38A_2021
+England/NORW-22D2E7/2021 -> England_NORW-22D2E7_2021
+England/NORW-22D1F9/2021 -> England_NORW-22D1F9_2021
+England/NORW-22D3B7/2021 -> England_NORW-22D3B7_2021
+England/NORW-22D399/2021 -> England_NORW-22D399_2021
+England/NORW-22B3E6/2021 -> England_NORW-22B3E6_2021
+England/NORW-22B8AB/2021 -> England_NORW-22B8AB_2021
+England/NORW-22B38C/2021 -> England_NORW-22B38C_2021
+England/NORW-22B54A/2021 -> England_NORW-22B54A_2021
+England/NORW-22BD51/2021 -> England_NORW-22BD51_2021
+England/NORW-22CC17/2021 -> England_NORW-22CC17_2021
+England/NORW-21FC08/2021 -> England_NORW-21FC08_2021
+England/NORW-22BBA2/2021 -> England_NORW-22BBA2_2021
+England/NORW-22BA0F/2021 -> England_NORW-22BA0F_2021
+England/NORW-22B225/2021 -> England_NORW-22B225_2021
+England/NORW-22D539/2021 -> England_NORW-22D539_2021
+England/NORW-22BB39/2021 -> England_NORW-22BB39_2021
+England/NORW-22B216/2021 -> England_NORW-22B216_2021
+England/NORW-22BB0C/2021 -> England_NORW-22BB0C_2021
+England/NORW-22C1CD/2021 -> England_NORW-22C1CD_2021
+England/NORW-22BE30/2021 -> England_NORW-22BE30_2021
+England/NORW-22BDF7/2021 -> England_NORW-22BDF7_2021
+England/NORW-22BB93/2021 -> England_NORW-22BB93_2021
+England/NORW-22BE6D/2021 -> England_NORW-22BE6D_2021
+England/NORW-22B2CB/2021 -> England_NORW-22B2CB_2021
+England/NORW-22BCDC/2021 -> England_NORW-22BCDC_2021
+England/NORW-22CE5D/2021 -> England_NORW-22CE5D_2021
+England/NORW-22BFE2/2021 -> England_NORW-22BFE2_2021
+England/NORW-22C172/2021 -> England_NORW-22C172_2021
+England/NORW-22B902/2021 -> England_NORW-22B902_2021
+England/NORW-22BCCD/2021 -> England_NORW-22BCCD_2021
+England/NORW-22D469/2021 -> England_NORW-22D469_2021
+England/NORW-22BF79/2021 -> England_NORW-22BF79_2021
+England/NORW-22B9F3/2021 -> England_NORW-22B9F3_2021
+England/NORW-22BD8E/2021 -> England_NORW-22BD8E_2021
+England/NORW-22BDBB/2021 -> England_NORW-22BDBB_2021
+England/NORW-22CD14/2021 -> England_NORW-22CD14_2021
+England/NORW-22D593/2021 -> England_NORW-22D593_2021
+England/NORW-22BF6A/2021 -> England_NORW-22BF6A_2021
+England/NORW-22CD9C/2021 -> England_NORW-22CD9C_2021
+England/NORW-21FC62/2021 -> England_NORW-21FC62_2021
+England/NORW-22BD42/2021 -> England_NORW-22BD42_2021
+England/NORW-22CD41/2021 -> England_NORW-22CD41_2021
+England/NORW-22D548/2021 -> England_NORW-22D548_2021
+England/NORW-22D43C/2021 -> England_NORW-22D43C_2021
+England/NORW-22B42F/2021 -> England_NORW-22B42F_2021
+England/NORW-22BC45/2021 -> England_NORW-22BC45_2021
+England/NORW-22CDC9/2021 -> England_NORW-22CDC9_2021
+England/NORW-22C206/2021 -> England_NORW-22C206_2021
+England/NORW-22B2BC/2021 -> England_NORW-22B2BC_2021
+England/NORW-22BD7F/2021 -> England_NORW-22BD7F_2021
+England/NORW-22BEC7/2021 -> England_NORW-22BEC7_2021
+England/NORW-22BEA9/2021 -> England_NORW-22BEA9_2021
+England/NORW-22D487/2021 -> England_NORW-22D487_2021
+England/NORW-22BBB1/2021 -> England_NORW-22BBB1_2021
+England/NORW-22B9B7/2021 -> England_NORW-22B9B7_2021
+England/NORW-22CD6F/2021 -> England_NORW-22CD6F_2021
+England/NORW-22BE4F/2021 -> England_NORW-22BE4F_2021
+England/NORW-22CC53/2021 -> England_NORW-22CC53_2021
+England/NORW-22CD7E/2021 -> England_NORW-22CD7E_2021
+England/NORW-22B43E/2021 -> England_NORW-22B43E_2021
+England/NORW-22C145/2021 -> England_NORW-22C145_2021
+England/NORW-22B313/2021 -> England_NORW-22B313_2021
+England/NORW-22D29C/2021 -> England_NORW-22D29C_2021
+England/NORW-22BD15/2021 -> England_NORW-22BD15_2021
+England/NORW-22B2AD/2021 -> England_NORW-22B2AD_2021
+England/NORW-22BDD9/2021 -> England_NORW-22BDD9_2021
+England/NORW-22B52C/2021 -> England_NORW-22B52C_2021
+England/NORW-22B39B/2021 -> England_NORW-22B39B_2021
+England/NORW-22B243/2021 -> England_NORW-22B243_2021
+England/NORW-22B261/2021 -> England_NORW-22B261_2021
+England/NORW-22BC81/2021 -> England_NORW-22BC81_2021
+England/NORW-22BD06/2021 -> England_NORW-22BD06_2021
+England/NORW-22BAF0/2021 -> England_NORW-22BAF0_2021
+England/NORW-22BDE8/2021 -> England_NORW-22BDE8_2021
+England/NORW-22B45C/2021 -> England_NORW-22B45C_2021
+England/NORW-22BAD2/2021 -> England_NORW-22BAD2_2021
+England/NORW-22B51D/2021 -> England_NORW-22B51D_2021
+England/NORW-22C039/2021 -> England_NORW-22C039_2021
+England/NORW-22B252/2021 -> England_NORW-22B252_2021
+England/NORW-22BDAC/2021 -> England_NORW-22BDAC_2021
+England/NORW-22B35F/2021 -> England_NORW-22B35F_2021
+England/NORW-22C1DC/2021 -> England_NORW-22C1DC_2021
+England/NORW-22B3B9/2021 -> England_NORW-22B3B9_2021
+England/NORW-22BE9A/2021 -> England_NORW-22BE9A_2021
+England/NORW-22D496/2021 -> England_NORW-22D496_2021
+England/NORW-22BF5B/2021 -> England_NORW-22BF5B_2021
+England/NORW-22BE8B/2021 -> England_NORW-22BE8B_2021
+England/NORW-22C057/2021 -> England_NORW-22C057_2021
+England/NORW-22B9E4/2021 -> England_NORW-22B9E4_2021
+England/NORW-21FB29/2021 -> England_NORW-21FB29_2021
+England/NORW-22B2DA/2021 -> England_NORW-22B2DA_2021
+England/NORW-22BE7C/2021 -> England_NORW-22BE7C_2021
+England/NORW-22CB65/2021 -> England_NORW-22CB65_2021
+England/NORW-22BB75/2021 -> England_NORW-22BB75_2021
+England/NORW-22CC62/2021 -> England_NORW-22CC62_2021
+England/NORW-228F7C/2021 -> England_NORW-228F7C_2021
+England/NORW-229719/2021 -> England_NORW-229719_2021
+England/NORW-2273F9/2021 -> England_NORW-2273F9_2021
+England/NORW-22970A/2021 -> England_NORW-22970A_2021
+England/NORW-2297A0/2021 -> England_NORW-2297A0_2021
+England/NORW-22898D/2021 -> England_NORW-22898D_2021
+England/NORW-229C0B/2021 -> England_NORW-229C0B_2021
+England/NORW-2291DF/2021 -> England_NORW-2291DF_2021
+England/NORW-228747/2021 -> England_NORW-228747_2021
+England/NORW-228FE5/2021 -> England_NORW-228FE5_2021
+England/NORW-228DDC/2021 -> England_NORW-228DDC_2021
+England/NORW-22A077/2021 -> England_NORW-22A077_2021
+England/NORW-22899C/2021 -> England_NORW-22899C_2021
+England/NORW-227E07/2021 -> England_NORW-227E07_2021
+England/NORW-229281/2021 -> England_NORW-229281_2021
+England/NORW-22A772/2021 -> England_NORW-22A772_2021
+England/NORW-2245F6/2021 -> England_NORW-2245F6_2021
+England/NORW-22A45D/2021 -> England_NORW-22A45D_2021
+England/NORW-229597/2020 -> England_NORW-229597_2020
+England/NORW-2284F5/2021 -> England_NORW-2284F5_2021
+England/NORW-229D08/2021 -> England_NORW-229D08_2021
+England/NORW-227265/2021 -> England_NORW-227265_2021
+England/NORW-228176/2021 -> England_NORW-228176_2021
+England/NORW-22A96D/2021 -> England_NORW-22A96D_2021
+England/NORW-229139/2021 -> England_NORW-229139_2021
+England/NORW-2283E9/2020 -> England_NORW-2283E9_2020
+England/NORW-2294A9/2021 -> England_NORW-2294A9_2021
+England/NORW-2295C4/2021 -> England_NORW-2295C4_2021
+England/NORW-22AAD3/2021 -> England_NORW-22AAD3_2021
+England/NORW-22951F/2021 -> England_NORW-22951F_2021
+England/NORW-22A332/2021 -> England_NORW-22A332_2021
+England/NORW-22897E/2021 -> England_NORW-22897E_2021
+England/NORW-22A97C/2021 -> England_NORW-22A97C_2021
+England/NORW-229B1D/2021 -> England_NORW-229B1D_2021
+England/NORW-228B0F/2021 -> England_NORW-228B0F_2021
+England/NORW-228307/2021 -> England_NORW-228307_2021
+England/NORW-227F7D/2021 -> England_NORW-227F7D_2021
+England/NORW-228000/2021 -> England_NORW-228000_2021
+England/NORW-2245E7/2021 -> England_NORW-2245E7_2021
+England/NORW-229B86/2020 -> England_NORW-229B86_2020
+England/NORW-228B87/2021 -> England_NORW-228B87_2021
+England/NORW-224611/2021 -> England_NORW-224611_2021
+England/NORW-229096/2021 -> England_NORW-229096_2021
+England/NORW-227FE6/2021 -> England_NORW-227FE6_2021
+England/NORW-2292CD/2021 -> England_NORW-2292CD_2021
+England/NORW-228DFA/2021 -> England_NORW-228DFA_2021
+England/NORW-22911B/2021 -> England_NORW-22911B_2021
+England/NORW-22A253/2021 -> England_NORW-22A253_2021
+England/NORW-22A9F4/2021 -> England_NORW-22A9F4_2021
+England/NORW-228871/2021 -> England_NORW-228871_2021
+England/NORW-22862C/2021 -> England_NORW-22862C_2021
+England/NORW-2296C1/2021 -> England_NORW-2296C1_2021
+England/NORW-22756C/2021 -> England_NORW-22756C_2021
+England/NORW-22960D/2021 -> England_NORW-22960D_2021
+England/NORW-227F8C/2021 -> England_NORW-227F8C_2021
+England/NORW-22961C/2021 -> England_NORW-22961C_2021
+England/NORW-228E15/2021 -> England_NORW-228E15_2021
+England/NORW-229A01/2020 -> England_NORW-229A01_2020
+England/NORW-228CEE/2021 -> England_NORW-228CEE_2021
+England/NORW-229658/2021 -> England_NORW-229658_2021
+England/NORW-227247/2021 -> England_NORW-227247_2021
+England/NORW-22AEAA/2021 -> England_NORW-22AEAA_2021
+England/NORW-227F31/2021 -> England_NORW-227F31_2021
+England/NORW-2291A2/2021 -> England_NORW-2291A2_2021
+England/NORW-228352/2021 -> England_NORW-228352_2021
+England/NORW-227FB9/2021 -> England_NORW-227FB9_2021
+England/NORW-229AF2/2020 -> England_NORW-229AF2_2020
+England/NORW-228B78/2021 -> England_NORW-228B78_2021
+England/NORW-22810D/2020 -> England_NORW-22810D_2020
+England/NORW-228C57/2021 -> England_NORW-228C57_2021
+
+                          Gap/Ambiguity  Composition  p-value
+   1  NC_045512.2                 0.00%    passed     97.28%
+   2  England_NORW-22D223_2021    1.72%    passed    100.00%
+   3  England_NORW-22D1CC_2021    1.72%    passed    100.00%
+   4  England_NORW-22D162_2021    9.52%    passed     98.43%
+   5  England_NORW-22B37D_2021    1.72%    passed     99.99%
+   6  England_NORW-22D2C9_2021    1.72%    passed     99.95%
+   7  England_NORW-22D1BD_2021    1.72%    passed     99.97%
+   8  England_NORW-22D36C_2021    1.72%    passed     99.98%
+   9  England_NORW-22463F_2021    1.72%    passed    100.00%
+  10  England_NORW-22465D_2021    1.72%    passed     99.99%
+  11  England_NORW-22D205_2021    1.72%    passed    100.00%
+  12  England_NORW-22B4C5_2021    1.66%    passed     99.97%
+  13  England_NORW-22D27E_2021    1.72%    passed     99.98%
+  14  England_NORW-22D180_2021    2.78%    passed     99.85%
+  15  England_NORW-22466C_2021    9.67%    passed     99.77%
+  16  England_NORW-22464E_2021    1.72%    passed     99.98%
+  17  England_NORW-22B085_2021    1.72%    passed     99.97%
+  18  England_NORW-22D302_2021    1.89%    passed    100.00%
+  19  England_NORW-22D1AE_2021    2.79%    passed     99.85%
+  20  England_NORW-22D34E_2021    1.72%    passed     99.98%
+  21  England_NORW-22B00D_2021    1.72%    passed     99.98%
+  22  England_NORW-22B304_2021    2.18%    passed     99.94%
+  23  England_NORW-22D214_2021    7.66%    passed     96.84%
+  24  England_NORW-22D250_2021    2.15%    passed     99.98%
+  25  England_NORW-22468A_2021    1.72%    passed     99.99%
+  26  England_NORW-22D171_2021    1.72%    passed    100.00%
+  27  England_NORW-22D26F_2021    1.72%    passed     99.97%
+  28  England_NORW-22D0DE_2021    1.72%    passed    100.00%
+  29  England_NORW-22D3D5_2021    2.28%    passed     99.90%
+  30  England_NORW-22D2F6_2021    1.72%    passed    100.00%
+  31  England_NORW-22B2F8_2021    1.66%    passed     99.98%
+  32  England_NORW-22D2BA_2021    1.72%    passed     99.98%
+  33  England_NORW-22AF4D_2021    8.26%    passed     99.68%
+  34  England_NORW-22D19F_2021    8.18%    passed     98.28%
+  35  England_NORW-22D108_2021    1.72%    passed     99.99%
+  36  England_NORW-22D38A_2021    1.72%    passed     99.99%
+  37  England_NORW-22D2E7_2021    4.00%    passed     99.98%
+  38  England_NORW-22D1F9_2021    8.94%    passed     97.78%
+  39  England_NORW-22D3B7_2021    1.72%    passed     99.99%
+  40  England_NORW-22D399_2021    8.90%    passed     98.92%
+  41  England_NORW-22B3E6_2021    1.74%    passed     99.98%
+  42  England_NORW-22B8AB_2021    1.72%    passed     99.98%
+  43  England_NORW-22B38C_2021    1.72%    passed    100.00%
+  44  England_NORW-22B54A_2021    1.72%    passed     99.99%
+  45  England_NORW-22BD51_2021    5.30%    passed     99.07%
+  46  England_NORW-22CC17_2021    1.72%    passed     99.98%
+  47  England_NORW-21FC08_2021    1.72%    passed     99.99%
+  48  England_NORW-22BBA2_2021    1.72%    passed     99.99%
+  49  England_NORW-22BA0F_2021    2.04%    passed     99.97%
+  50  England_NORW-22B225_2021    2.01%    passed    100.00%
+  51  England_NORW-22D539_2021    7.23%    passed     99.57%
+  52  England_NORW-22BB39_2021    1.73%    passed     99.97%
+  53  England_NORW-22B216_2021    1.72%    passed     99.98%
+  54  England_NORW-22BB0C_2021    1.72%    passed     99.98%
+  55  England_NORW-22C1CD_2021    1.72%    passed     99.99%
+  56  England_NORW-22BE30_2021    1.72%    passed     99.96%
+  57  England_NORW-22BDF7_2021    1.72%    passed     99.99%
+  58  England_NORW-22BB93_2021    1.72%    passed     99.99%
+  59  England_NORW-22BE6D_2021    1.76%    passed     99.97%
+  60  England_NORW-22B2CB_2021    1.73%    passed     99.99%
+  61  England_NORW-22BCDC_2021    2.32%    passed     99.85%
+  62  England_NORW-22CE5D_2021    1.72%    passed     99.98%
+  63  England_NORW-22BFE2_2021    1.73%    passed     99.94%
+  64  England_NORW-22C172_2021    2.01%    passed     99.99%
+  65  England_NORW-22B902_2021    1.72%    passed     99.97%
+  66  England_NORW-22BCCD_2021    1.72%    passed     99.97%
+  67  England_NORW-22D469_2021    1.72%    passed     99.99%
+  68  England_NORW-22BF79_2021    7.54%    passed     99.11%
+  69  England_NORW-22B9F3_2021    1.72%    passed     99.99%
+  70  England_NORW-22BD8E_2021    1.72%    passed     99.99%
+  71  England_NORW-22BDBB_2021    5.65%    passed     99.73%
+  72  England_NORW-22CD14_2021    1.73%    passed     99.97%
+  73  England_NORW-22D593_2021    2.63%    passed     99.63%
+  74  England_NORW-22BF6A_2021    2.73%    passed     99.89%
+  75  England_NORW-22CD9C_2021    1.72%    passed     99.99%
+  76  England_NORW-21FC62_2021    4.38%    passed     99.79%
+  77  England_NORW-22BD42_2021    1.72%    passed     99.98%
+  78  England_NORW-22CD41_2021    1.72%    passed     99.99%
+  79  England_NORW-22D548_2021    1.72%    passed     99.97%
+  80  England_NORW-22D43C_2021    4.56%    passed     98.01%
+  81  England_NORW-22B42F_2021    1.76%    passed     99.97%
+  82  England_NORW-22BC45_2021    3.70%    passed     99.46%
+  83  England_NORW-22CDC9_2021    2.28%    passed     99.99%
+  84  England_NORW-22C206_2021    1.77%    passed     99.98%
+  85  England_NORW-22B2BC_2021    1.76%    passed     99.97%
+  86  England_NORW-22BD7F_2021    1.72%    passed     99.96%
+  87  England_NORW-22BEC7_2021    1.72%    passed     99.98%
+  88  England_NORW-22BEA9_2021    7.83%    passed     99.52%
+  89  England_NORW-22D487_2021    2.42%    passed     99.97%
+  90  England_NORW-22BBB1_2021    1.72%    passed     99.97%
+  91  England_NORW-22B9B7_2021    3.77%    passed     99.87%
+  92  England_NORW-22CD6F_2021    2.19%    passed    100.00%
+  93  England_NORW-22BE4F_2021    1.66%    passed     99.91%
+  94  England_NORW-22CC53_2021    1.72%    passed     99.99%
+  95  England_NORW-22CD7E_2021    1.81%    passed     99.96%
+  96  England_NORW-22B43E_2021    1.76%    passed     99.99%
+  97  England_NORW-22C145_2021    2.16%    passed     99.86%
+  98  England_NORW-22B313_2021    1.72%    passed     99.99%
+  99  England_NORW-22D29C_2021    7.49%    passed     98.57%
+ 100  England_NORW-22BD15_2021    1.85%    passed    100.00%
+ 101  England_NORW-22B2AD_2021    1.72%    passed     99.98%
+ 102  England_NORW-22BDD9_2021    4.60%    passed     99.88%
+ 103  England_NORW-22B52C_2021    1.73%    passed     99.97%
+ 104  England_NORW-22B39B_2021    5.40%    passed     96.33%
+ 105  England_NORW-22B243_2021    1.72%    passed     99.98%
+ 106  England_NORW-22B261_2021    1.73%    passed     99.97%
+ 107  England_NORW-22BC81_2021    1.72%    passed    100.00%
+ 108  England_NORW-22BD06_2021    1.87%    passed    100.00%
+ 109  England_NORW-22BAF0_2021    1.72%    passed     99.96%
+ 110  England_NORW-22BDE8_2021    1.72%    passed     99.99%
+ 111  England_NORW-22B45C_2021    1.72%    passed     99.99%
+ 112  England_NORW-22BAD2_2021    1.72%    passed     99.95%
+ 113  England_NORW-22B51D_2021    1.66%    passed     99.93%
+ 114  England_NORW-22C039_2021    1.79%    passed    100.00%
+ 115  England_NORW-22B252_2021    2.47%    passed     99.98%
+ 116  England_NORW-22BDAC_2021    1.72%    passed     99.97%
+ 117  England_NORW-22B35F_2021    3.23%    passed     99.87%
+ 118  England_NORW-22C1DC_2021    1.72%    passed     99.93%
+ 119  England_NORW-22B3B9_2021    1.72%    passed     99.95%
+ 120  England_NORW-22BE9A_2021    1.72%    passed     99.96%
+ 121  England_NORW-22D496_2021    2.15%    passed     99.96%
+ 122  England_NORW-22BF5B_2021    1.66%    passed     99.97%
+ 123  England_NORW-22BE8B_2021    9.48%    passed     98.77%
+ 124  England_NORW-22C057_2021    1.72%    passed     99.97%
+ 125  England_NORW-22B9E4_2021    1.72%    passed     99.95%
+ 126  England_NORW-21FB29_2021    1.72%    passed     99.99%
+ 127  England_NORW-22B2DA_2021    1.72%    passed     99.97%
+ 128  England_NORW-22BE7C_2021    1.85%    passed     99.99%
+ 129  England_NORW-22CB65_2021    1.72%    passed     99.98%
+ 130  England_NORW-22BB75_2021    1.72%    passed     99.95%
+ 131  England_NORW-22CC62_2021    1.73%    passed     99.99%
+ 132  England_NORW-228F7C_2021    1.96%    passed     99.99%
+ 133  England_NORW-229719_2021    4.14%    passed     99.41%
+ 134  England_NORW-2273F9_2021    1.76%    passed    100.00%
+ 135  England_NORW-22970A_2021    5.17%    passed     97.72%
+ 136  England_NORW-2297A0_2021    1.71%    passed     99.91%
+ 137  England_NORW-22898D_2021    3.21%    passed     99.99%
+ 138  England_NORW-229C0B_2021    1.72%    passed     99.95%
+ 139  England_NORW-2291DF_2021    2.47%    passed     99.98%
+ 140  England_NORW-228747_2021    1.72%    passed     99.93%
+ 141  England_NORW-228FE5_2021    3.73%    passed     99.87%
+ 142  England_NORW-228DDC_2021    1.84%    passed    100.00%
+ 143  England_NORW-22A077_2021    7.15%    passed     97.47%
+ 144  England_NORW-22899C_2021    1.72%    passed     99.99%
+ 145  England_NORW-227E07_2021    1.72%    passed     99.96%
+ 146  England_NORW-229281_2021    3.43%    passed     99.99%
+ 147  England_NORW-22A772_2021    1.75%    passed     99.99%
+ 148  England_NORW-2245F6_2021    1.72%    passed     99.99%
+ 149  England_NORW-22A45D_2021    6.26%    passed     97.84%
+ 150  England_NORW-229597_2020    1.66%    passed     99.89%
+ 151  England_NORW-2284F5_2021    1.67%    passed     99.94%
+ 152  England_NORW-229D08_2021    8.42%    passed     93.67%
+ 153  England_NORW-227265_2021    2.45%    passed     99.97%
+ 154  England_NORW-228176_2021    3.24%    passed     99.91%
+ 155  England_NORW-22A96D_2021    4.70%    passed     98.76%
+ 156  England_NORW-229139_2021    1.72%    passed     99.98%
+ 157  England_NORW-2283E9_2020    1.66%    passed     99.97%
+ 158  England_NORW-2294A9_2021    1.72%    passed     99.97%
+ 159  England_NORW-2295C4_2021    8.77%    passed     88.79%
+ 160  England_NORW-22AAD3_2021    1.75%    passed     99.99%
+ 161  England_NORW-22951F_2021    2.83%    passed     99.98%
+ 162  England_NORW-22A332_2021    2.38%    passed     99.99%
+ 163  England_NORW-22897E_2021    1.84%    passed    100.00%
+ 164  England_NORW-22A97C_2021    1.75%    passed     99.95%
+ 165  England_NORW-229B1D_2021    1.97%    passed    100.00%
+ 166  England_NORW-228B0F_2021    1.66%    passed     99.95%
+ 167  England_NORW-228307_2021    1.72%    passed     99.98%
+ 168  England_NORW-227F7D_2021    9.55%    passed     92.06%
+ 169  England_NORW-228000_2021    1.72%    passed     99.94%
+ 170  England_NORW-2245E7_2021    1.72%    passed     99.99%
+ 171  England_NORW-229B86_2020    4.35%    passed     99.51%
+ 172  England_NORW-228B87_2021    1.72%    passed     99.97%
+ 173  England_NORW-224611_2021    1.72%    passed     99.99%
+ 174  England_NORW-229096_2021    2.90%    passed     99.94%
+ 175  England_NORW-227FE6_2021    2.93%    passed     99.99%
+ 176  England_NORW-2292CD_2021    1.66%    passed     99.89%
+ 177  England_NORW-228DFA_2021    2.03%    passed     99.98%
+ 178  England_NORW-22911B_2021    4.57%    passed     99.05%
+ 179  England_NORW-22A253_2021    1.79%    passed     99.92%
+ 180  England_NORW-22A9F4_2021    1.72%    passed     99.99%
+ 181  England_NORW-228871_2021    2.72%    passed     99.97%
+ 182  England_NORW-22862C_2021    1.76%    passed     99.97%
+ 183  England_NORW-2296C1_2021    1.66%    passed     99.91%
+ 184  England_NORW-22756C_2021    4.76%    passed     98.48%
+ 185  England_NORW-22960D_2021    1.98%    passed    100.00%
+ 186  England_NORW-227F8C_2021    1.72%    passed     99.97%
+ 187  England_NORW-22961C_2021    1.72%    passed     99.99%
+ 188  England_NORW-228E15_2021    5.13%    passed     98.30%
+ 189  England_NORW-229A01_2020    6.26%    passed     97.68%
+ 190  England_NORW-228CEE_2021    2.56%    passed     99.92%
+ 191  England_NORW-229658_2021    1.74%    passed     99.97%
+ 192  England_NORW-227247_2021    1.72%    passed     99.98%
+ 193  England_NORW-22AEAA_2021    1.72%    passed     99.99%
+ 194  England_NORW-227F31_2021    2.67%    passed     99.96%
+ 195  England_NORW-2291A2_2021    3.27%    passed     99.98%
+ 196  England_NORW-228352_2021    1.66%    passed     99.91%
+ 197  England_NORW-227FB9_2021    3.65%    passed     99.93%
+ 198  England_NORW-229AF2_2020    2.71%    passed     99.21%
+ 199  England_NORW-228B78_2021    6.83%    passed     96.48%
+ 200  England_NORW-22810D_2020    2.67%    passed     99.96%
+ 201  England_NORW-228C57_2021    9.02%    passed     95.67%
+****  TOTAL                       2.75%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: England_NORW-22D0DE_2021 is identical to England_NORW-22D205_2021 but kept for subsequent analysis
+NOTE: England_NORW-22D2BA_2021 is identical to England_NORW-22D27E_2021 but kept for subsequent analysis
+NOTE: England_NORW-22BEC7_2021 is identical to England_NORW-22B216_2021 but kept for subsequent analysis
+NOTE: England_NORW-22899C_2021 is identical to England_NORW-22C1CD_2021 but kept for subsequent analysis
+NOTE: England_NORW-22B9F3_2021 is identical to England_NORW-22BDF7_2021 but kept for subsequent analysis
+NOTE: England_NORW-22B42F_2021 is identical to England_NORW-22BE6D_2021 but kept for subsequent analysis
+NOTE: England_NORW-22BCCD_2021 is identical to England_NORW-22B902_2021 but kept for subsequent analysis
+NOTE: England_NORW-22BE9A_2021 is identical to England_NORW-22BD7F_2021 but kept for subsequent analysis
+NOTE: England_NORW-22B2DA_2021 is identical to England_NORW-22C057_2021 but kept for subsequent analysis
+NOTE: England_NORW-224611_2021 is identical to England_NORW-2245F6_2021 but kept for subsequent analysis
+NOTE: England_NORW-227F8C_2021 is identical to England_NORW-228B87_2021 but kept for subsequent analysis
+NOTE: 4 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: England_NORW-22961C_2021 (identical to England_NORW-22C1CD_2021) is ignored but added at the end
+NOTE: England_NORW-22CC53_2021 (identical to England_NORW-22BDF7_2021) is ignored but added at the end
+NOTE: England_NORW-22B2BC_2021 (identical to England_NORW-22BE6D_2021) is ignored but added at the end
+NOTE: England_NORW-22862C_2021 (identical to England_NORW-22BE6D_2021) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.020 seconds
+NOTE: ModelFinder requires 100 MB RAM!
+ModelFinder will test 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            46342.643    391 93467.286    93477.673    96714.820
+  2  JC+I          46315.901    392 93415.802    93426.243    96671.642
+  3  JC+G4         46319.629    392 93423.257    93433.698    96679.097
+  4  JC+I+G4       46315.887    393 93417.774    93428.269    96681.920
+  5  JC+R2         46334.859    393 93455.718    93466.213    96719.864
+  6  JC+R3         46332.707    395 93455.414    93466.016    96736.171
+ 14  F81+F         45397.302    394 91582.604    91593.152    94855.055
+ 15  F81+F+I       45372.616    395 91535.232    91545.834    94815.989
+ 16  F81+F+G4      45375.311    395 91540.622    91551.224    94821.379
+ 17  F81+F+I+G4    45372.593    396 91537.185    91547.842    94826.248
+ 18  F81+F+R2      45389.735    396 91571.469    91582.126    94860.532
+ 19  F81+F+R3      45387.580    398 91571.160    91581.925    94876.834
+ 27  K2P           46156.001    392 93096.001    93106.442    96351.841
+ 28  K2P+I         46129.194    393 93044.389    93054.883    96308.534
+ 29  K2P+G4        46132.951    393 93051.902    93062.397    96316.048
+ 30  K2P+I+G4      46129.180    394 93046.361    93056.909    96318.812
+ 31  K2P+R2        46148.350    394 93084.699    93095.248    96357.151
+ 32  K2P+R3        46146.052    396 93084.105    93094.761    96373.167
+ 40  HKY+F         45198.383    395 91186.766    91197.368    94467.523
+ 41  HKY+F+I       45176.039    396 91144.078    91154.734    94433.141
+ 42  HKY+F+G4      45177.709    396 91147.418    91158.074    94436.481
+ 43  HKY+F+I+G4    45176.007    397 91146.013    91156.724    94443.382
+ 44  HKY+F+R2      45191.140    397 91176.279    91186.990    94473.648
+ 45  HKY+F+R3      45188.908    399 91175.816    91186.635    94489.796
+ 53  TNe           46104.923    393 92995.846    93006.340    96259.991
+ 54  TNe+I         46080.294    394 92948.587    92959.136    96221.039
+ 55  TNe+G4        46082.896    394 92953.791    92964.340    96226.243
+ 56  TNe+I+G4      46080.254    395 92950.508    92961.111    96231.265
+ 57  TNe+R2        46097.503    395 92985.005    92995.607    96265.762
+ 58  TNe+R3        46095.154    397 92984.307    92995.018    96281.676
+ 66  TN+F          45145.909    396 91083.817    91094.474    94372.880
+ 67  TN+F+I        45126.700    397 91047.399    91058.110    94344.768
+ 68  TN+F+G4       45127.289    397 91048.578    91059.289    94345.947
+ 69  TN+F+I+G4     45126.625    398 91049.249    91060.014    94354.924
+ 70  TN+F+R2       45139.097    398 91074.194    91084.959    94379.868
+ 71  TN+F+R3       45136.939    400 91073.878    91084.751    94396.163
+ 79  K3P           46150.347    393 93086.694    93097.189    96350.840
+ 80  K3P+I         46123.502    394 93035.004    93045.553    96307.456
+ 81  K3P+G4        46127.261    394 93042.521    93053.070    96314.973
+ 82  K3P+I+G4      46123.483    395 93036.966    93047.568    96317.723
+ 83  K3P+R2        46142.841    395 93075.681    93086.283    96356.438
+ 84  K3P+R3        46140.279    397 93074.558    93085.268    96371.926
+ 92  K3Pu+F        45190.732    396 91173.464    91184.120    94462.527
+ 93  K3Pu+F+I      45168.614    397 91131.229    91141.939    94428.597
+ 94  K3Pu+F+G4     45170.187    397 91134.375    91145.085    94431.743
+ 95  K3Pu+F+I+G4   45168.576    398 91133.152    91143.917    94438.826
+ 96  K3Pu+F+R2     45183.708    398 91163.417    91174.181    94469.091
+ 97  K3Pu+F+R3     45181.256    400 91162.512    91173.386    94484.798
+105  TPM2+F        45189.664    396 91171.329    91181.985    94460.392
+106  TPM2+F+I      45167.255    397 91128.510    91139.220    94425.878
+107  TPM2+F+G4     45168.927    397 91131.854    91142.564    94429.222
+108  TPM2+F+I+G4   45167.214    398 91130.427    91141.192    94436.101
+109  TPM2+F+R2     45182.654    398 91161.307    91172.072    94466.982
+110  TPM2+F+R3     45180.142    400 91160.284    91171.158    94482.570
+118  TPM2u+F       45189.567    396 91171.135    91181.791    94460.197
+119  TPM2u+F+I     45167.179    397 91128.358    91139.069    94425.727
+120  TPM2u+F+G4    45168.859    397 91131.718    91142.429    94429.087
+121  TPM2u+F+I+G4  45167.143    398 91130.286    91141.051    94435.961
+122  TPM2u+F+R2    45182.604    398 91161.207    91171.972    94466.881
+123  TPM2u+F+R3    45180.018    400 91160.036    91170.909    94482.321
+131  TPM3+F        45197.450    396 91186.899    91197.556    94475.962
+132  TPM3+F+I      45174.822    397 91143.643    91154.354    94441.012
+133  TPM3+F+G4     45176.607    397 91147.213    91157.924    94444.582
+134  TPM3+F+I+G4   45174.789    398 91145.578    91156.343    94451.252
+135  TPM3+F+R2     45190.498    398 91176.996    91187.761    94482.670
+136  TPM3+F+R3     45187.844    400 91175.687    91186.561    94497.973
+144  TPM3u+F       45197.336    396 91186.672    91197.329    94475.735
+145  TPM3u+F+I     45174.718    397 91143.436    91154.146    94440.804
+146  TPM3u+F+G4    45176.503    397 91147.005    91157.716    94444.374
+147  TPM3u+F+I+G4  45174.689    398 91145.377    91156.142    94451.051
+148  TPM3u+F+R2    45190.438    398 91176.875    91187.640    94482.549
+149  TPM3u+F+R3    45187.724    400 91175.448    91186.322    94497.734
+157  TIMe          46098.964    394 92985.929    92996.477    96258.380
+158  TIMe+I        46074.295    395 92938.589    92949.191    96219.346
+159  TIMe+G4       46076.890    395 92943.779    92954.382    96224.536
+160  TIMe+I+G4     46074.248    396 92940.496    92951.153    96229.559
+161  TIMe+R2       46091.880    396 92975.760    92986.417    96264.823
+162  TIMe+R3       46088.995    398 92973.989    92984.754    96279.664
+170  TIM+F         45138.053    397 91070.107    91080.817    94367.475
+171  TIM+F+I       45119.048    398 91034.095    91044.860    94339.769
+172  TIM+F+G4      45119.589    398 91035.178    91045.943    94340.853
+173  TIM+F+I+G4    45118.974    399 91035.947    91046.766    94349.927
+174  TIM+F+R2      45131.558    399 91061.116    91071.935    94375.096
+175  TIM+F+R3      45128.892    401 91059.784    91070.713    94390.376
+183  TIM2e         46099.462    394 92986.924    92997.472    96259.375
+184  TIM2e+I       46074.974    395 92939.948    92950.550    96220.705
+185  TIM2e+G4      46077.506    395 92945.013    92955.615    96225.770
+186  TIM2e+I+G4    46074.931    396 92941.862    92952.518    96230.925
+187  TIM2e+R2      46092.499    396 92976.997    92987.654    96266.060
+188  TIM2e+R3      46089.470    398 92974.939    92985.704    96280.613
+196  TIM2+F        45137.050    397 91068.101    91078.811    94365.469
+197  TIM2+F+I      45117.935    398 91031.870    91042.635    94337.545
+198  TIM2+F+G4     45118.497    398 91032.993    91043.758    94338.667
+199  TIM2+F+I+G4   45117.843    399 91033.686    91044.505    94347.666
+200  TIM2+F+R2     45130.603    399 91059.205    91070.025    94373.185
+201  TIM2+F+R3     45127.778    401 91057.557    91068.485    94388.148
+209  TIM3e         46102.126    394 92992.252    93002.800    96264.703
+210  TIM3e+I       46076.629    395 92943.259    92953.861    96224.016
+211  TIM3e+G4      46079.652    395 92949.305    92959.907    96230.062
+212  TIM3e+I+G4    46076.552    396 92945.104    92955.760    96234.166
+213  TIM3e+R2      46095.155    396 92982.310    92992.967    96271.373
+214  TIM3e+R3      46091.871    398 92979.742    92990.507    96285.416
+222  TIM3+F        45144.681    397 91083.362    91094.072    94380.730
+223  TIM3+F+I      45125.360    398 91046.720    91057.485    94352.395
+224  TIM3+F+G4     45125.986    398 91047.973    91058.737    94353.647
+225  TIM3+F+I+G4   45125.285    399 91048.571    91059.390    94362.551
+226  TIM3+F+R2     45138.356    399 91074.712    91085.531    94388.692
+227  TIM3+F+R3     45135.364    401 91072.727    91083.656    94403.319
+235  TVMe          46145.030    395 93080.061    93090.663    96360.818
+236  TVMe+I        46117.359    396 93026.717    93037.373    96315.780
+237  TVMe+G4       46121.607    396 93035.214    93045.870    96324.277
+238  TVMe+I+G4     46117.345    397 93028.691    93039.401    96326.059
+239  TVMe+R2       46138.031    397 93070.061    93080.771    96367.430
+240  TVMe+R3       46134.506    399 93067.012    93077.831    96380.992
+248  TVM+F         45184.989    398 91165.979    91176.744    94471.653
+249  TVM+F+I       45162.342    399 91122.683    91133.502    94436.663
+250  TVM+F+G4      45164.130    399 91126.260    91137.080    94440.240
+251  TVM+F+I+G4    45162.304    400 91124.608    91135.481    94446.893
+252  TVM+F+R2      45178.374    400 91156.748    91167.622    94479.033
+253  TVM+F+R3      45175.006    402 91154.013    91164.996    94492.910
+261  SYM           46094.146    396 92980.291    92990.947    96269.354
+262  SYM+I         46068.597    397 92931.193    92941.904    96228.562
+263  SYM+G4        46071.652    397 92937.303    92948.014    96234.672
+264  SYM+I+G4      46068.556    398 92933.112    92943.876    96238.786
+265  SYM+R2        46087.314    398 92970.628    92981.393    96276.302
+266  SYM+R3        46083.698    400 92967.396    92978.270    96289.681
+274  GTR+F         45132.695    399 91063.389    91074.209    94377.369
+275  GTR+F+I       45113.370    400 91026.741    91037.615    94349.026
+276  GTR+F+G4      45113.997    400 91027.994    91038.868    94350.279
+277  GTR+F+I+G4    45113.288    401 91028.575    91039.504    94359.167
+278  GTR+F+R2      45126.486    401 91054.973    91065.901    94385.564
+279  GTR+F+R3      45123.174    403 91052.348    91063.387    94399.551
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         TIM2+F+I
+Best-fit model: TIM2+F+I chosen according to BIC
+
+All model information printed to ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa.model.gz
+CPU time for ModelFinder: 64.997 seconds (0h:1m:4s)
+Wall-clock time for ModelFinder: 66.129 seconds (0h:1m:6s)
+
+NOTE: 10 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -45383.327
+2. Current log-likelihood: -45180.772
+3. Current log-likelihood: -45117.861
+Optimal log-likelihood: -45117.846
+Rate parameters:  A-C: 0.44391  A-G: 2.46658  A-T: 0.44391  C-G: 1.00000  C-T: 8.01339  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.800
+Parameters optimization took 3 rounds (1.014 sec)
+Computing ML distances based on estimated model parameters... 0.396 sec
+Computing BIONJ tree...
+0.019 seconds
+Log-likelihood of BIONJ tree: -45116.102
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.884 second
+Computing log-likelihood of 98 initial trees ... 5.710 seconds
+Current best score: -45112.310
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -45111.893
+Iteration 10 / LogL: -45111.901 / Time: 0h:0m:13s
+Iteration 20 / LogL: -45113.682 / Time: 0h:0m:17s
+Finish initializing candidate tree set (20)
+Current best tree score: -45111.893 / CPU time: 15.576
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -45112.086 / Time: 0h:0m:22s (0h:0m:55s left)
+Iteration 40 / LogL: -45112.262 / Time: 0h:0m:28s (0h:0m:44s left)
+Iteration 50 / LogL: -45112.086 / Time: 0h:0m:34s (0h:0m:35s left)
+Iteration 60 / LogL: -45113.207 / Time: 0h:0m:39s (0h:0m:27s left)
+Iteration 70 / LogL: -45112.150 / Time: 0h:0m:45s (0h:0m:20s left)
+Iteration 80 / LogL: -45112.177 / Time: 0h:0m:51s (0h:0m:13s left)
+Iteration 90 / LogL: -45112.064 / Time: 0h:0m:57s (0h:0m:7s left)
+BETTER TREE FOUND at iteration 91: -45111.886
+Iteration 100 / LogL: -45112.149 / Time: 0h:1m:2s (0h:0m:57s left)
+Iteration 110 / LogL: -45112.122 / Time: 0h:1m:8s (0h:0m:50s left)
+Iteration 120 / LogL: -45142.880 / Time: 0h:1m:13s (0h:0m:44s left)
+Iteration 130 / LogL: -45112.147 / Time: 0h:1m:19s (0h:0m:37s left)
+Iteration 140 / LogL: -45112.221 / Time: 0h:1m:24s (0h:0m:31s left)
+Iteration 150 / LogL: -45112.067 / Time: 0h:1m:29s (0h:0m:24s left)
+Iteration 160 / LogL: -45140.106 / Time: 0h:1m:34s (0h:0m:18s left)
+Iteration 170 / LogL: -45121.522 / Time: 0h:1m:40s (0h:0m:12s left)
+BETTER TREE FOUND at iteration 175: -45111.880
+Iteration 180 / LogL: -45140.455 / Time: 0h:1m:45s (0h:0m:56s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 189: -45111.863
+Iteration 190 / LogL: -45112.172 / Time: 0h:1m:51s (0h:0m:58s left)
+Iteration 200 / LogL: -45112.045 / Time: 0h:1m:56s (0h:0m:52s left)
+Iteration 210 / LogL: -45112.153 / Time: 0h:2m:1s (0h:0m:45s left)
+Iteration 220 / LogL: -45180.244 / Time: 0h:2m:6s (0h:0m:40s left)
+Iteration 230 / LogL: -45156.506 / Time: 0h:2m:12s (0h:0m:34s left)
+Iteration 240 / LogL: -45140.326 / Time: 0h:2m:17s (0h:0m:28s left)
+Iteration 250 / LogL: -45111.940 / Time: 0h:2m:23s (0h:0m:22s left)
+Iteration 260 / LogL: -45112.211 / Time: 0h:2m:28s (0h:0m:16s left)
+Iteration 270 / LogL: -45119.971 / Time: 0h:2m:33s (0h:0m:10s left)
+Iteration 280 / LogL: -45112.201 / Time: 0h:2m:39s (0h:0m:5s left)
+Iteration 290 / LogL: -45174.019 / Time: 0h:2m:46s (0h:0m:-1s left)
+TREE SEARCH COMPLETED AFTER 290 ITERATIONS / Time: 0h:2m:46s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -45111.863
+Optimal log-likelihood: -45111.860
+Rate parameters:  A-C: 0.45661  A-G: 2.45127  A-T: 0.45661  C-G: 1.00000  C-T: 8.00931  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.792
+Parameters optimization took 1 rounds (0.168 sec)
+BEST SCORE FOUND : -45111.860
+Total tree length: 0.015
+
+Total number of iterations: 290
+CPU time used for tree search: 162.494 sec (0h:2m:42s)
+Wall-clock time used for tree search: 164.499 sec (0h:2m:44s)
+Total CPU time used: 164.210 sec (0h:2m:44s)
+Total wall-clock time used: 166.219 sec (0h:2m:46s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa.iqtree
+  Maximum-likelihood tree:       ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa.treefile
+  Likelihood distances:          ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa.mldist
+  Screen log file:               ../data/COG-UK-NORW/results/iqtree/NORW_200_ref_aln.fa.log
+
+Date and Time: Mon Feb  7 17:00:18 2022

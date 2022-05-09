@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sed 's/\//_/g' *aln > reformatted0.aln
+rapidnj reformatted0.aln -i fa -t d -n -c 8 -o t -x fast.aln.tre
+cat reformatted0.aln | sed 's/England/_England/g;s/2021/2021_/g;s/2020/2020_/g;s/2022/2022_/g' > reformatted.aln

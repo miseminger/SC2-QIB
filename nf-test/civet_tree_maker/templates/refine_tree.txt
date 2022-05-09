@@ -1,0 +1,3 @@
+#!/bin/bash
+
+iqtree -s reformatted.aln -m HKY+G -t fast.aln.tre -czb

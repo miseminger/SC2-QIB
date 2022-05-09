@@ -1,0 +1,69 @@
+Mar.-13 13:57:20.816 [main] DEBUG nextflow.cli.Launcher - $> nextflow run sample.nf -with-dag flowchart.png
+Mar.-13 13:57:20.888 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Mar.-13 13:57:20.928 [main] INFO  nextflow.cli.CmdRun - Launching `sample.nf` [angry_hawking] - revision: 33989d6686
+Mar.-13 13:57:21.030 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/madeline/.nextflow/plugins
+Mar.-13 13:57:21.032 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar.-13 13:57:21.051 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar.-13 13:57:21.052 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar.-13 13:57:21.057 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar.-13 13:57:21.081 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar.-13 13:57:21.174 [main] DEBUG nextflow.Session - Session uuid: b94b9b4d-4532-469f-9f55-605f759d7111
+Mar.-13 13:57:21.174 [main] DEBUG nextflow.Session - Run name: angry_hawking
+Mar.-13 13:57:21.177 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar.-13 13:57:21.244 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (16:55 BST)
+  System: Linux 5.13.0-35-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.14+9-Ubuntu-0ubuntu2.20.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 14135@tamarisk [127.0.1.1]
+  CPUs: 8 - Mem: 9.7 GB (3.9 GB) - Swap: 2 GB (2 GB)
+Mar.-13 13:57:21.289 [main] DEBUG nextflow.Session - Work-dir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/work [ext2/ext3]
+Mar.-13 13:57:21.289 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/bin
+Mar.-13 13:57:21.298 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar.-13 13:57:21.312 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar.-13 13:57:21.378 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-13 13:57:21.523 [main] DEBUG nextflow.Session - Session start invoked
+Mar.-13 13:57:22.463 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar.-13 13:57:22.599 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-13 13:57:22.599 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-13 13:57:22.607 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar.-13 13:57:22.614 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=9.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar.-13 13:57:22.645 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar.-13 13:57:22.809 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar.-13 13:57:22.809 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar.-13 13:57:22.820 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: maskProblematicSites, chooseSamples
+Mar.-13 13:57:22.822 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar.-13 13:57:22.822 [main] DEBUG nextflow.Session - Session await
+Mar.-13 13:57:23.009 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /home/ubuntu/03.nn_geodate_min_noadm2.csv.xz -- Cause: java.nio.file.NoSuchFileException: /home/ubuntu/03.nn_geodate_min_noadm2.csv.xz
+Mar.-13 13:57:23.118 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar.-13 13:57:23.155 [Task submitter] INFO  nextflow.Session - [8b/f2d62b] Submitted process > chooseSamples
+Mar.-13 13:57:23.223 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: chooseSamples; status: COMPLETED; exit: 2; error: -; workDir: /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/work/8b/f2d62b2f06942cef1c2efc7b31677b]
+Mar.-13 13:57:23.271 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'chooseSamples'
+
+Caused by:
+  Process `chooseSamples` terminated with an error exit status (2)
+
+Command executed:
+
+  python3 /home/ubuntu/scripts/get_query_seqs_by_date.py --nn_file 03.nn_geodate_min_noadm2.csv.xz --start_date 2021-07-01 --end_date 2021-07-10 --query_names "query_samples.txt" --ref_names "neighbour_samples.txt" --nn_file_subset "nn_file_subset.csv.xz" --N 2
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  python3: can't open file '/home/ubuntu/scripts/get_query_seqs_by_date.py': [Errno 2] No such file or directory
+
+Work dir:
+  /home/madeline/Desktop/git_temp/QIB_Internship/nf-test/work/8b/f2d62b2f06942cef1c2efc7b31677b
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Mar.-13 13:57:23.285 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `chooseSamples` terminated with an error exit status (2)
+Mar.-13 13:57:23.288 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar.-13 13:57:23.320 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar.-13 13:57:23.327 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=5ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar.-13 13:57:23.494 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar.-13 13:57:23.513 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
