@@ -137,6 +137,8 @@ process refineTree {
 
 
 process runPangolin {
+    conda 'bioconda::pangolin'
+    
     input:
     file '*aln' from pango_ch
     
