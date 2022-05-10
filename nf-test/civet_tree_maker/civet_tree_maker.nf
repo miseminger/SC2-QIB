@@ -1,8 +1,8 @@
 #!/usr/bin/env nextflow
 
 /*
-This pipeline is built to create trees out of query samples, (for now) without the option to enrich with nearest neighbours.
-A date range must always be specified, but beyond this there are several ways of doing this:
+This pipeline is built to create trees out of SARS-CoV-2 sequences from the CIVET database.
+A date range must always be specified, but beyond this there are several ways of choosing samples:
 
 --subset your data to a random sample of up to max_samples_per_month seqs per month
 --reduce your query samples to the diverseQueries most diverse: to skip this, set diverseQueries=false
@@ -85,6 +85,9 @@ process removeWuhanHu1 {
                  
 
 process reduceQueries {
+    conda 'bioconda::iqtree=1.6.12'
+    conda 'bioconda::rapidnj=2.3.2'
+    
     input:
     file("query_samples_masked.aln") from reduceQueries_ch
     
@@ -103,6 +106,8 @@ fastTree_ch.mix(optional_ch).into { rapidnj_tree_ch; pango_ch; cog_select_ch }
 
 
 process buildFastTree {
+    conda 'bioconda::rapidnj=2.3.2'
+    
     input:
     file '*aln' from rapidnj_tree_ch
 
@@ -117,6 +122,8 @@ process buildFastTree {
 
 
 process refineTree {
+    conda 'bioconda::iqtree=1.6.12'
+    
     input:
     file("reformatted.aln") from slow_tree_aln
     file("fast.aln.tre") from slow_tree_start_ch
