@@ -1,1 +1,0 @@
-2022-03-13 13:57:21	2.5s	angry_hawking	ERR	33989d6686cca4aeafb612535f58c12a	b94b9b4d-4532-469f-9f55-605f759d7111	nextflow run sample.nf -with-dag flowchart.png
